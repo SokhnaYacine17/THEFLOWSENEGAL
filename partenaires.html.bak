@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="description" content="The Flow Sénégal - Nos partenaires institutionnels, associatifs et privés qui soutiennent la protection du fleuve Sénégal à Saint-Louis.">
-  <title>The Flow Sénégal | Partenaires - Ils nous soutiennent</title>
+  <meta name="description" content="The Flow SÃ©nÃ©gal - Nos partenaires institutionnels, associatifs et privÃ©s qui soutiennent la protection du fleuve SÃ©nÃ©gal Ã  Saint-Louis.">
+  <title>The Flow SÃ©nÃ©gal | Partenaires - Ils nous soutiennent</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="CSS/style.css">
 
   <style>
-    /* Styles spécifiques à la page Partenaires */
+    /* Styles spÃ©cifiques Ã  la page Partenaires */
     .partners-header {
       background: linear-gradient(135deg, #0D2B28 0%, #1A4A42 100%);
       padding: 160px 0 80px;
@@ -53,7 +53,7 @@
       z-index: 2;
     }
 
-    /* Catégories de partenaires */
+    /* CatÃ©gories de partenaires */
     .category-section {
       padding: 80px 0;
     }
@@ -179,7 +179,7 @@
       gap: 12px;
     }
 
-    /* Partenaires institutionnels (style différent) */
+    /* Partenaires institutionnels (style diffÃ©rent) */
     .institution-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -288,15 +288,15 @@
   <header class="site-header">
     <div class="container header-container">
       <div class="logo">
-        <a href="index.html" aria-label="The Flow Sénégal - Retour à l'accueil">
-          <img src="images/logoTFS.jpeg" alt="Logo de The Flow Sénégal" class="logo-image">
-          <span class="logo-text">THE FLOW<span class="accent"> Sénégal</span></span>
+        <a href="index.html" aria-label="The Flow SÃ©nÃ©gal - Retour Ã  l'accueil">
+          <img src="images/logoTFS.jpeg" alt="Logo de The Flow SÃ©nÃ©gal" class="logo-image">
+          <span class="logo-text">THE FLOW<span class="accent"> SÃ©nÃ©gal</span></span>
         </a>
       </div>
       <nav class="main-nav" aria-label="Navigation principale">
         <ul class="nav-list">
           <li><a href="index.html" class="nav-link">Accueil</a></li>
-          <li><a href="apropos.html" class="nav-link">À propos</a></li>
+          <li><a href="apropos.html" class="nav-link">Ã€ propos</a></li>
           <li><a href="programme.html" class="nav-link">Programme</a></li>
           <li><a href="galerie.html" class="nav-link">Galerie</a></li>
           <li><a href="partenaires.html" class="nav-link active">Partenaires</a></li>
@@ -314,7 +314,7 @@
     <section class="partners-header">
       <div class="container">
         <h1>Nos <span class="highlight">partenaires</span></h1>
-        <p>Ils nous soutiennent et nous accompagnent dans la protection du fleuve Sénégal.</p>
+        <p>Ils nous soutiennent et nous accompagnent dans la protection du fleuve SÃ©nÃ©gal.</p>
       </div>
     </section>
 
@@ -325,13 +325,13 @@
           <div class="category-icon"><i class="fas fa-building"></i></div>
           <span>Partenaires institutionnels</span>
         </div>
-        <div class="category-desc">Des institutions engagées à nos côtés pour un cadre de vie préservé.</div>
+        <div class="category-desc">Des institutions engagÃ©es Ã  nos cÃ´tÃ©s pour un cadre de vie prÃ©servÃ©.</div>
 
         <div class="institution-grid">
           <div class="institution-card">
             <div class="institution-logo"><i class="fas fa-building"></i></div>
-            <h4>Délégation Régionale du Cadre de Vie</h4>
-            <p>Saint-Louis, Sénégal</p>
+            <h4>DÃ©lÃ©gation RÃ©gionale du Cadre de Vie</h4>
+            <p>Saint-Louis, SÃ©nÃ©gal</p>
           </div>
           <div class="institution-card">
             <div class="institution-logo"><i class="fas fa-city"></i></div>
@@ -345,8 +345,8 @@
           </div>
           <div class="institution-card">
             <div class="institution-logo"><i class="fas fa-tree"></i></div>
-            <h4>Direction des Eaux et Forêts</h4>
-            <p>Région de Saint-Louis</p>
+            <h4>Direction des Eaux et ForÃªts</h4>
+            <p>RÃ©gion de Saint-Louis</p>
           </div>
         </div>
       </div>
@@ -364,32 +364,32 @@
         <div class="partners-grid">
           <div class="partner-card">
             <div class="partner-logo"><i class="fas fa-ship"></i></div>
-            <h3>Fédération Sénégalaise de Canoë-Kayak</h3>
+            <h3>FÃ©dÃ©ration SÃ©nÃ©galaise de CanoÃ«-Kayak</h3>
             <span class="partner-type">Sport &amp; Nature</span>
-            <p class="partner-description">Partenaires de la parade nautique et des activités paddle sur le fleuve.</p>
+            <p class="partner-description">Partenaires de la parade nautique et des activitÃ©s paddle sur le fleuve.</p>
             <a href="#" class="partner-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
           </div>
 
           <div class="partner-card">
             <div class="partner-logo"><i class="fas fa-person-hiking"></i></div>
             <h3>Association des Randonneurs de Saint-Louis</h3>
-            <span class="partner-type">Randonnée &amp; Environnement</span>
+            <span class="partner-type">RandonnÃ©e &amp; Environnement</span>
             <p class="partner-description">Mobilisation lors des marches citoyennes et clean-ups.</p>
             <a href="#" class="partner-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
           </div>
 
           <div class="partner-card">
             <div class="partner-logo"><i class="fas fa-seedling"></i></div>
-            <h3>Éco-Delta Sénégal</h3>
+            <h3>Ã‰co-Delta SÃ©nÃ©gal</h3>
             <span class="partner-type">Protection de l'environnement</span>
-            <p class="partner-description">Actions de reforestation et de préservation de la biodiversité.</p>
+            <p class="partner-description">Actions de reforestation et de prÃ©servation de la biodiversitÃ©.</p>
             <a href="#" class="partner-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
           </div>
 
           <div class="partner-card">
             <div class="partner-logo"><i class="fas fa-school"></i></div>
-            <h3>Écoles de Diamaguène</h3>
-            <span class="partner-type">Éducation</span>
+            <h3>Ã‰coles de DiamaguÃ¨ne</h3>
+            <span class="partner-type">Ã‰ducation</span>
             <p class="partner-description">Partenaires du programme de sensibilisation scolaire.</p>
             <a href="#" class="partner-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
           </div>
@@ -404,21 +404,21 @@
           <div class="category-icon"><i class="fas fa-globe-africa"></i></div>
           <span>Partenaires internationaux</span>
         </div>
-        <div class="category-desc">Des alliances au-delà des frontières pour un mouvement mondial.</div>
+        <div class="category-desc">Des alliances au-delÃ  des frontiÃ¨res pour un mouvement mondial.</div>
 
         <div class="partners-grid">
           <div class="partner-card">
             <div class="partner-logo"><i class="fas fa-water"></i></div>
             <h3>The Flow International</h3>
-            <span class="partner-type">Réseau mondial</span>
-            <p class="partner-description">Mouvement international pour la protection des fleuves, né à Paris.</p>
+            <span class="partner-type">RÃ©seau mondial</span>
+            <p class="partner-description">Mouvement international pour la protection des fleuves, nÃ© Ã  Paris.</p>
             <a href="https://www.jointheflow.org" target="_blank" class="partner-link">Visiter le site <i class="fas fa-external-link-alt"></i></a>
           </div>
 
           <div class="partner-card">
             <div class="partner-logo"><i class="fas fa-hand-holding-heart"></i></div>
             <h3>Fondation pour la Nature</h3>
-            <span class="partner-type">Mécénat</span>
+            <span class="partner-type">MÃ©cÃ©nat</span>
             <p class="partner-description">Soutien financier et technique pour nos actions environnementales.</p>
             <a href="#" class="partner-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
           </div>
@@ -433,22 +433,22 @@
           <div class="category-icon"><i class="fas fa-industry"></i></div>
           <span>Entreprises locales</span>
         </div>
-        <div class="category-desc">Des entreprises engagées pour un développement durable à Saint-Louis.</div>
+        <div class="category-desc">Des entreprises engagÃ©es pour un dÃ©veloppement durable Ã  Saint-Louis.</div>
 
         <div class="partners-grid">
           <div class="partner-card">
             <div class="partner-logo"><i class="fas fa-truck"></i></div>
-            <h3>Transport Express Sénégal</h3>
+            <h3>Transport Express SÃ©nÃ©gal</h3>
             <span class="partner-type">Logistique</span>
-            <p class="partner-description">Mise à disposition de moyens de transport pour nos actions terrain.</p>
+            <p class="partner-description">Mise Ã  disposition de moyens de transport pour nos actions terrain.</p>
             <a href="#" class="partner-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
           </div>
 
           <div class="partner-card">
             <div class="partner-logo"><i class="fas fa-store"></i></div>
-            <h3>Marché de Diamaguène</h3>
+            <h3>MarchÃ© de DiamaguÃ¨ne</h3>
             <span class="partner-type">Commerce local</span>
-            <p class="partner-description">Partenariat pour la sensibilisation des commerçants.</p>
+            <p class="partner-description">Partenariat pour la sensibilisation des commerÃ§ants.</p>
             <a href="#" class="partner-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
@@ -458,8 +458,8 @@
     <!-- Devenir partenaire -->
     <section class="become-partner">
       <div class="container">
-        <h2>🤝 Vous souhaitez nous rejoindre ?</h2>
-        <p>Devenez partenaire de The Flow Sénégal et contribuez à la protection du fleuve. Un mécénat, un don en matériel, un partenariat de compétences : chaque soutien compte.</p>
+        <h2>ðŸ¤ Vous souhaitez nous rejoindre ?</h2>
+        <p>Devenez partenaire de The Flow SÃ©nÃ©gal et contribuez Ã  la protection du fleuve. Un mÃ©cÃ©nat, un don en matÃ©riel, un partenariat de compÃ©tences : chaque soutien compte.</p>
         <a href="contact.html" class="btn-partner">Devenir partenaire <i class="fas fa-heart"></i></a>
       </div>
     </section>
@@ -468,8 +468,8 @@
     <section class="cta-section">
       <div class="container cta-container">
         <div class="cta-content">
-          <h2>Restez informés</h2>
-          <p>Inscrivez-vous à notre newsletter pour suivre nos actualités et nos actions.</p>
+          <h2>Restez informÃ©s</h2>
+          <p>Inscrivez-vous Ã  notre newsletter pour suivre nos actualitÃ©s et nos actions.</p>
           <form class="cta-form" id="newsletterForm">
             <label for="newsletter-email" class="visually-hidden">Adresse email</label>
             <input type="email" id="newsletter-email" placeholder="Votre email" required>
@@ -484,8 +484,8 @@
   <footer class="site-footer">
     <div class="container footer-container">
       <div class="footer-col">
-        <div class="logo-footer">THE FLOW <span>Sénégal</span></div>
-        <p>Association citoyenne pour la protection du fleuve Sénégal et l'amélioration du cadre de vie.</p>
+        <div class="logo-footer">THE FLOW <span>SÃ©nÃ©gal</span></div>
+        <p>Association citoyenne pour la protection du fleuve SÃ©nÃ©gal et l'amÃ©lioration du cadre de vie.</p>
         <div class="social-links">
           <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
           <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
@@ -496,7 +496,7 @@
         <h4>Navigation</h4>
         <ul>
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="apropos.html">À propos</a></li>
+          <li><a href="apropos.html">Ã€ propos</a></li>
           <li><a href="programme.html">Programme</a></li>
           <li><a href="galerie.html">Galerie</a></li>
           <li><a href="partenaires.html">Partenaires</a></li>
@@ -506,19 +506,19 @@
       <div class="footer-col">
         <h4>Nous trouver</h4>
         <ul>
-          <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Diamaguène, près du dispensaire Sor</li>
-          <li><i class="fas fa-city" aria-hidden="true"></i> Saint-Louis, Sénégal</li>
+          <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> DiamaguÃ¨ne, prÃ¨s du dispensaire Sor</li>
+          <li><i class="fas fa-city" aria-hidden="true"></i> Saint-Louis, SÃ©nÃ©gal</li>
           <li><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:contact@theflowsenegal.org">contact@theflowsenegal.org</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Rejoignez-nous</h4>
-        <p>Soutenez l'initiative, devenez bénévole.</p>
+        <p>Soutenez l'initiative, devenez bÃ©nÃ©vole.</p>
         <a href="contact.html" class="btn-small">Nous contacter</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 The Flow Sénégal — Ensemble, redonnons vie au fleuve.</p>
+      <p>&copy; 2026 The Flow SÃ©nÃ©gal â€” Ensemble, redonnons vie au fleuve.</p>
     </div>
   </footer>
 
@@ -531,7 +531,7 @@
         e.preventDefault();
         const email = this.querySelector('input[type="email"]').value;
         if (email && email.includes('@')) {
-          alert(`Merci ${email} ! Vous êtes maintenant inscrit(e) à notre newsletter. 🌊`);
+          alert(`Merci ${email} ! Vous Ãªtes maintenant inscrit(e) Ã  notre newsletter. ðŸŒŠ`);
           this.reset();
         } else {
           alert('Veuillez entrer une adresse email valide.');

@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="description" content="The Flow Sénégal - Programme des actions de protection du fleuve Sénégal à Saint-Louis. Découvrez nos événements, nettoyages, animations et ateliers.">
-  <title>The Flow Sénégal | Programme - Nos actions</title>
+  <meta name="description" content="The Flow SÃ©nÃ©gal - Programme des actions de protection du fleuve SÃ©nÃ©gal Ã  Saint-Louis. DÃ©couvrez nos Ã©vÃ©nements, nettoyages, animations et ateliers.">
+  <title>The Flow SÃ©nÃ©gal | Programme - Nos actions</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="CSS/style.css">
 
   <style>
-    /* Styles spécifiques à la page Programme */
+    /* Styles spÃ©cifiques Ã  la page Programme */
     .programme-header {
       background: linear-gradient(135deg, #0D2B28 0%, #1A4A42 100%);
       padding: 160px 0 80px;
@@ -79,7 +79,7 @@
       margin-top: 30px;
     }
 
-    /* Timeline des événements */
+    /* Timeline des Ã©vÃ©nements */
     .timeline-section {
       padding: 80px 0;
       background: var(--white);
@@ -251,7 +251,7 @@
       font-weight: 600;
     }
 
-    /* Éditions passées */
+    /* Ã‰ditions passÃ©es */
     .past-editions {
       padding: 80px 0;
       background: var(--light);
@@ -352,15 +352,15 @@
   <header class="site-header">
     <div class="container header-container">
       <div class="logo">
-        <a href="index.html" aria-label="The Flow Sénégal - Retour à l'accueil">
-          <img src="images/logoTFS.jpeg" alt="Logo de The Flow Sénégal" class="logo-image">
-          <span class="logo-text">THE FLOW<span class="accent"> Sénégal</span></span>
+        <a href="index.html" aria-label="The Flow SÃ©nÃ©gal - Retour Ã  l'accueil">
+          <img src="images/logoTFS.jpeg" alt="Logo de The Flow SÃ©nÃ©gal" class="logo-image">
+          <span class="logo-text">THE FLOW<span class="accent"> SÃ©nÃ©gal</span></span>
         </a>
       </div>
       <nav class="main-nav" aria-label="Navigation principale">
         <ul class="nav-list">
           <li><a href="index.html" class="nav-link">Accueil</a></li>
-          <li><a href="apropos.html" class="nav-link">À propos</a></li>
+          <li><a href="apropos.html" class="nav-link">Ã€ propos</a></li>
           <li><a href="programme.html" class="nav-link active">Programme</a></li>
           <li><a href="galerie.html" class="nav-link">Galerie</a></li>
           <li><a href="partenaires.html" class="nav-link">Partenaires</a></li>
@@ -378,22 +378,22 @@
     <section class="programme-header">
       <div class="container">
         <h1>Notre <span class="highlight">programme</span></h1>
-        <p>Découvrez nos actions passées et à venir pour la protection du fleuve Sénégal.</p>
+        <p>DÃ©couvrez nos actions passÃ©es et Ã  venir pour la protection du fleuve SÃ©nÃ©gal.</p>
       </div>
     </section>
 
-    <!-- Introduction - Le fleuve comme point de départ -->
+    <!-- Introduction - Le fleuve comme point de dÃ©part -->
     <section class="intro-section">
       <div class="container">
         <div class="intro-text">
           <div class="section-header">
-            <span class="section-tag">The Flow Sénégal — Saint-Louis, mai 2025</span>
-            <h2>Le fleuve Sénégal comme <span class="accent-text">point de départ</span> d'un mouvement</h2>
+            <span class="section-tag">The Flow SÃ©nÃ©gal â€” Saint-Louis, mai 2025</span>
+            <h2>Le fleuve SÃ©nÃ©gal comme <span class="accent-text">point de dÃ©part</span> d'un mouvement</h2>
             <div class="divider"></div>
           </div>
-          <p>En mai 2025, The Flow s'est invité à Saint-Louis du Sénégal, porté par l'association The Flow Sénégal et Pape Mbaye, pour une première édition locale qui a réuni habitants, associations, sportifs et enfants autour d'un même élan : prendre soin du fleuve, tout en célébrant la vie qu'il relie.</p>
-          <p>Ce fut le début d'un mouvement : une alliance entre nature, culture et jeunesse, ancrée au cœur du delta du Sénégal.</p>
-          <div class="intro-quote">🌊 Deux jours d'action et de partage</div>
+          <p>En mai 2025, The Flow s'est invitÃ© Ã  Saint-Louis du SÃ©nÃ©gal, portÃ© par l'association The Flow SÃ©nÃ©gal et Pape Mbaye, pour une premiÃ¨re Ã©dition locale qui a rÃ©uni habitants, associations, sportifs et enfants autour d'un mÃªme Ã©lan : prendre soin du fleuve, tout en cÃ©lÃ©brant la vie qu'il relie.</p>
+          <p>Ce fut le dÃ©but d'un mouvement : une alliance entre nature, culture et jeunesse, ancrÃ©e au cÅ“ur du delta du SÃ©nÃ©gal.</p>
+          <div class="intro-quote">ðŸŒŠ Deux jours d'action et de partage</div>
         </div>
       </div>
     </section>
@@ -408,13 +408,13 @@
               <i class="fas fa-calendar-day"></i>
               <span>Samedi 17 mai 2025</span>
             </div>
-            <div class="day-subtitle">— Au cœur du quartier de Diamaguène</div>
+            <div class="day-subtitle">â€” Au cÅ“ur du quartier de DiamaguÃ¨ne</div>
             <ul class="activity-list">
-              <li><i class="fas fa-water"></i> <strong>Initiation paddle</strong> pour les enfants, une première découverte du fleuve sous un angle ludique et bienveillant.</li>
+              <li><i class="fas fa-water"></i> <strong>Initiation paddle</strong> pour les enfants, une premiÃ¨re dÃ©couverte du fleuve sous un angle ludique et bienveillant.</li>
               <li><i class="fas fa-broom"></i> <strong>Grand clean-up</strong> avec les habitants, jeunes et associations locales.</li>
-              <li><i class="fas fa-chalkboard-user"></i> <strong>Sensibilisation</strong> dans le marché et auprès des commerçants, pour promouvoir des pratiques plus respectueuses du fleuve.</li>
-              <li><i class="fas fa-paintbrush"></i> <strong>Mise en valeur des quais</strong> par des fresques, animations et décorations collectives.</li>
-              <li><i class="fas fa-futbol"></i> <strong>Grand match de foot de gala</strong> entre les jeunes du quartier et les bénévoles de The Flow Sénégal, symbole de l'énergie et de la fraternité du projet.</li>
+              <li><i class="fas fa-chalkboard-user"></i> <strong>Sensibilisation</strong> dans le marchÃ© et auprÃ¨s des commerÃ§ants, pour promouvoir des pratiques plus respectueuses du fleuve.</li>
+              <li><i class="fas fa-paintbrush"></i> <strong>Mise en valeur des quais</strong> par des fresques, animations et dÃ©corations collectives.</li>
+              <li><i class="fas fa-futbol"></i> <strong>Grand match de foot de gala</strong> entre les jeunes du quartier et les bÃ©nÃ©voles de The Flow SÃ©nÃ©gal, symbole de l'Ã©nergie et de la fraternitÃ© du projet.</li>
             </ul>
           </div>
 
@@ -424,11 +424,11 @@
               <i class="fas fa-calendar-day"></i>
               <span>Dimanche 18 mai 2025</span>
             </div>
-            <div class="day-subtitle">— Une grande parade sur terre et sur l'eau</div>
+            <div class="day-subtitle">â€” Une grande parade sur terre et sur l'eau</div>
             <ul class="activity-list">
               <li><i class="fas fa-person-walking"></i> <strong>Marche collective et clean-up</strong> avec les associations de randonneurs et marcheurs de Saint-Louis.</li>
-              <li><i class="fas fa-ship"></i> <strong>Parade nautique sur le fleuve</strong>, rassemblant paddlers, kayakistes et la Fédération Sénégalaise de Canoë-Kayak.</li>
-              <li><i class="fas fa-microphone-alt"></i> <strong>Rencontres avec les médias et les élus locaux</strong>, pour poser les bases d'une collaboration durable autour de la protection du fleuve.</li>
+              <li><i class="fas fa-ship"></i> <strong>Parade nautique sur le fleuve</strong>, rassemblant paddlers, kayakistes et la FÃ©dÃ©ration SÃ©nÃ©galaise de CanoÃ«-Kayak.</li>
+              <li><i class="fas fa-microphone-alt"></i> <strong>Rencontres avec les mÃ©dias et les Ã©lus locaux</strong>, pour poser les bases d'une collaboration durable autour de la protection du fleuve.</li>
             </ul>
           </div>
         </div>
@@ -438,10 +438,10 @@
     <!-- Mobilisation exemplaire -->
     <section class="mobilisation-section">
       <div class="container">
-        <div class="mobilisation-number">Près de 300 personnes</div>
+        <div class="mobilisation-number">PrÃ¨s de 300 personnes</div>
         <div class="mobilisation-text">
-          se sont mobilisées tout au long du week-end : habitants, enfants, bénévoles, sportifs, associations et institutions.<br>
-          <strong>Ce fut un moment fort de coopération, de transmission et d'espoir.</strong>
+          se sont mobilisÃ©es tout au long du week-end : habitants, enfants, bÃ©nÃ©voles, sportifs, associations et institutions.<br>
+          <strong>Ce fut un moment fort de coopÃ©ration, de transmission et d'espoir.</strong>
         </div>
       </div>
     </section>
@@ -453,18 +453,18 @@
           <span class="section-tag">Et maintenant ?</span>
           <h2>L'aventure ne fait que <span class="accent-text">commencer</span></h2>
           <div class="divider"></div>
-          <p>The Flow Sénégal poursuit la dynamique à travers plusieurs projets en cours :</p>
+          <p>The Flow SÃ©nÃ©gal poursuit la dynamique Ã  travers plusieurs projets en cours :</p>
         </div>
         <div class="projects-grid">
           <div class="project-card">
             <div class="project-icon"><i class="fas fa-recycle"></i></div>
             <h3>Programme de recyclage</h3>
-            <p>Collecte et valorisation des déchets le long du fleuve, en partenariat avec les écoles et associations locales.</p>
+            <p>Collecte et valorisation des dÃ©chets le long du fleuve, en partenariat avec les Ã©coles et associations locales.</p>
           </div>
           <div class="project-card">
             <div class="project-icon"><i class="fas fa-eye"></i></div>
             <h3>Surveillance citoyenne</h3>
-            <p>Mise en place d'une surveillance citoyenne et d'actions de sensibilisation toute l'année.</p>
+            <p>Mise en place d'une surveillance citoyenne et d'actions de sensibilisation toute l'annÃ©e.</p>
           </div>
         </div>
       </div>
@@ -475,31 +475,31 @@
       <div class="container">
         <div class="citation-card">
           <i class="fas fa-quote-left"></i>
-          <p>“Notre rêve, c'est que chaque enfant de Saint-Louis grandisse en regardant le fleuve comme un ami à protéger.”</p>
-          <span>— Pape Mbaye, président de The Flow Sénégal</span>
+          <p>â€œNotre rÃªve, c'est que chaque enfant de Saint-Louis grandisse en regardant le fleuve comme un ami Ã  protÃ©ger.â€</p>
+          <span>â€” Pape Mbaye, prÃ©sident de The Flow SÃ©nÃ©gal</span>
         </div>
       </div>
     </section>
 
-    <!-- Éditions passées -->
+    <!-- Ã‰ditions passÃ©es -->
     <section class="past-editions">
       <div class="container">
         <div class="section-header">
           <span class="section-tag">Notre histoire</span>
-          <h2>Édition <span class="accent-text">2025</span></h2>
+          <h2>Ã‰dition <span class="accent-text">2025</span></h2>
           <div class="divider"></div>
         </div>
         <div class="editions-grid">
           <div class="edition-card">
             <div class="edition-image">
-              <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=600&h=400&fit=crop" alt="1ère édition 2025">
+              <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=600&h=400&fit=crop" alt="1Ã¨re Ã©dition 2025">
             </div>
             <div class="edition-content">
-              <div class="edition-year">Édition 2025</div>
-              <p>Première mobilisation citoyenne autour du fleuve Sénégal à Saint-Louis.</p>
+              <div class="edition-year">Ã‰dition 2025</div>
+              <p>PremiÃ¨re mobilisation citoyenne autour du fleuve SÃ©nÃ©gal Ã  Saint-Louis.</p>
               <div class="edition-stats">
                 <span class="edition-stat"><i class="fas fa-users"></i> 300+ participants</span>
-                <span class="edition-stat"><i class="fas fa-trash-alt"></i> 1.2T déchets</span>
+                <span class="edition-stat"><i class="fas fa-trash-alt"></i> 1.2T dÃ©chets</span>
                 <span class="edition-stat"><i class="fas fa-calendar-alt"></i> 17-18 mai 2025</span>
               </div>
               <a href="galerie.html" class="btn-link">Voir les images <i class="fas fa-chevron-right"></i></a>
@@ -514,7 +514,7 @@
       <div class="container cta-container">
         <div class="cta-content">
           <h2>Rejoignez le mouvement</h2>
-          <p>The Flow Sénégal, ce n'est pas seulement un événement, c'est un mouvement pour un avenir plus respectueux de l'environnement. Ensemble, redonnons au fleuve Sénégal sa beauté.</p>
+          <p>The Flow SÃ©nÃ©gal, ce n'est pas seulement un Ã©vÃ©nement, c'est un mouvement pour un avenir plus respectueux de l'environnement. Ensemble, redonnons au fleuve SÃ©nÃ©gal sa beautÃ©.</p>
           <a href="contact.html" class="btn btn-primary">Nous rejoindre <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
@@ -525,8 +525,8 @@
   <footer class="site-footer">
     <div class="container footer-container">
       <div class="footer-col">
-        <div class="logo-footer">THE FLOW <span>Sénégal</span></div>
-        <p>Association citoyenne pour la protection du fleuve Sénégal et l'amélioration du cadre de vie.</p>
+        <div class="logo-footer">THE FLOW <span>SÃ©nÃ©gal</span></div>
+        <p>Association citoyenne pour la protection du fleuve SÃ©nÃ©gal et l'amÃ©lioration du cadre de vie.</p>
         <div class="social-links">
           <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
           <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
@@ -537,7 +537,7 @@
         <h4>Navigation</h4>
         <ul>
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="apropos.html">À propos</a></li>
+          <li><a href="apropos.html">Ã€ propos</a></li>
           <li><a href="programme.html">Programme</a></li>
           <li><a href="galerie.html">Galerie</a></li>
           <li><a href="partenaires.html">Partenaires</a></li>
@@ -547,19 +547,19 @@
       <div class="footer-col">
         <h4>Nous trouver</h4>
         <ul>
-          <li><i class="fas fa-map-marker-alt"></i> Diamaguène, près du dispensaire Sor</li>
-          <li><i class="fas fa-city"></i> Saint-Louis, Sénégal</li>
+          <li><i class="fas fa-map-marker-alt"></i> DiamaguÃ¨ne, prÃ¨s du dispensaire Sor</li>
+          <li><i class="fas fa-city"></i> Saint-Louis, SÃ©nÃ©gal</li>
           <li><i class="fas fa-envelope"></i> <a href="mailto:contact@theflowsenegal.org">contact@theflowsenegal.org</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Rejoignez-nous</h4>
-        <p>Soutenez l'initiative, devenez bénévole.</p>
+        <p>Soutenez l'initiative, devenez bÃ©nÃ©vole.</p>
         <a href="contact.html" class="btn-small">Nous contacter</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 The Flow Sénégal — Ensemble, redonnons vie au fleuve.</p>
+      <p>&copy; 2026 The Flow SÃ©nÃ©gal â€” Ensemble, redonnons vie au fleuve.</p>
     </div>
   </footer>
 

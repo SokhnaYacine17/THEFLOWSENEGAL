@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="description" content="The Flow Sénégal - Mouvement citoyen pour la protection du fleuve Sénégal à Saint-Louis. Nettoyage, sensibilisation, et reconnexion des jeunes à leur patrimoine naturel.">
-  <title>The Flow Sénégal | Mouvement pour le fleuve</title>
+  <meta name="description" content="The Flow SÃ©nÃ©gal - Mouvement citoyen pour la protection du fleuve SÃ©nÃ©gal Ã  Saint-Louis. Nettoyage, sensibilisation, et reconnexion des jeunes Ã  leur patrimoine naturel.">
+  <title>The Flow SÃ©nÃ©gal | Mouvement pour le fleuve</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="CSS/style.css">
@@ -13,16 +13,16 @@
   <header class="site-header">
     <div class="container header-container">
       <div class="logo">
-        <a href="index.html" aria-label="The Flow Sénégal - Retour à l'accueil">
-          <img src="images/logoTFS.jpeg" alt="Logo de The Flow Sénégal" class="logo-image">
-          <span class="logo-text">THE FLOW<span class="accent"> Sénégal</span></span>
+        <a href="index.html" aria-label="The Flow SÃ©nÃ©gal - Retour Ã  l'accueil">
+          <img src="images/logoTFS.jpeg" alt="Logo de The Flow SÃ©nÃ©gal" class="logo-image">
+          <span class="logo-text">THE FLOW<span class="accent"> SÃ©nÃ©gal</span></span>
         </a>
       </div>
       <nav class="main-nav" aria-label="Navigation principale">
         <ul class="nav-list">
           <li><a href="index.html" class="nav-link active" aria-label="Page d'accueil">Accueil</a></li>
-          <li><a href="apropos.html" class="nav-link" aria-label="À propos de The Flow Sénégal">À propos</a></li>
-          <li><a href="programme.html" class="nav-link" aria-label="Programme des événements">Programme</a></li>
+          <li><a href="apropos.html" class="nav-link" aria-label="Ã€ propos de The Flow SÃ©nÃ©gal">Ã€ propos</a></li>
+          <li><a href="programme.html" class="nav-link" aria-label="Programme des Ã©vÃ©nements">Programme</a></li>
           <li><a href="galerie.html" class="nav-link" aria-label="Galerie photos">Galerie</a></li>
           <li><a href="partenaires.html" class="nav-link" aria-label="Nos partenaires">Partenaires</a></li>
           <li><a href="contact.html" class="nav-link" aria-label="Nous contacter">Contact</a></li>
@@ -39,17 +39,17 @@
     <section class="hero">
       <div class="hero-overlay"></div>
       <div class="container hero-content">
-        <span class="hero-badge">Saint-Louis · Mai 2025</span>
-        <h1 class="hero-title">Le fleuve Sénégal comme <span class="highlight">point de départ</span> d'un mouvement</h1>
-        <p class="hero-subtitle">Une alliance entre nature, culture et jeunesse, ancrée au cœur du delta. The Flow Sénégal réunit habitants, sportifs et associations pour prendre soin du fleuve et célébrer la vie qu'il relie.</p>
+        <span class="hero-badge">Saint-Louis Â· Mai 2025</span>
+        <h1 class="hero-title">Le fleuve SÃ©nÃ©gal comme <span class="highlight">point de dÃ©part</span> d'un mouvement</h1>
+        <p class="hero-subtitle">Une alliance entre nature, culture et jeunesse, ancrÃ©e au cÅ“ur du delta. The Flow SÃ©nÃ©gal rÃ©unit habitants, sportifs et associations pour prendre soin du fleuve et cÃ©lÃ©brer la vie qu'il relie.</p>
         <div class="hero-stats">
-          <div class="stat"><span class="stat-number">300+</span> <span class="stat-label">mobilisés</span></div>
+          <div class="stat"><span class="stat-number">300+</span> <span class="stat-label">mobilisÃ©s</span></div>
           <div class="stat"><span class="stat-number">2</span> <span class="stat-label">jours d'action</span></div>
           <div class="stat"><span class="stat-number">15+</span> <span class="stat-label">partenaires</span></div>
         </div>
         <div class="hero-buttons">
           <a href="contact.html" class="btn btn-primary">Rejoindre le mouvement <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
-          <a href="programme.html" class="btn btn-outline">Découvrir l'événement</a>
+          <a href="programme.html" class="btn btn-outline">DÃ©couvrir l'Ã©vÃ©nement</a>
         </div>
       </div>
       <div class="hero-wave" aria-hidden="true">
@@ -64,8 +64,8 @@
       <div class="container">
         <div class="flash-card">
           <i class="fas fa-quote-left" aria-hidden="true"></i>
-          <p>“Notre rêve, c'est que chaque enfant de Saint-Louis grandisse en regardant le fleuve comme un ami à protéger.”</p>
-          <span>— Pape Mbaye, président de The Flow Sénégal</span>
+          <p>â€œNotre rÃªve, c'est que chaque enfant de Saint-Louis grandisse en regardant le fleuve comme un ami Ã  protÃ©ger.â€</p>
+          <span>â€” Pape Mbaye, prÃ©sident de The Flow SÃ©nÃ©gal</span>
         </div>
       </div>
     </section>
@@ -75,37 +75,37 @@
       <div class="container">
         <div class="section-header">
           <span class="section-tag">Pourquoi Saint-Louis ?</span>
-          <h2>Un patrimoine mondial <span class="accent-text">menacé</span>, une mobilisation nécessaire</h2>
+          <h2>Un patrimoine mondial <span class="accent-text">menacÃ©</span>, une mobilisation nÃ©cessaire</h2>
           <div class="divider"></div>
         </div>
         <div class="why-grid">
           <div class="why-text">
-            <p>Classée au patrimoine mondial de l'UNESCO, Saint-Louis incarne l'histoire et la richesse culturelle de l'Afrique de l'Ouest. Surnommée la <strong>“Région du Fleuve”</strong>, son développement est lié au fleuve Sénégal.</p>
-            <p>Cependant, les berges, autrefois lieux de vie et de célébration, sont aujourd'hui jonchées de déchets. <strong>The Flow Sénégal ambitionne de changer cette réalité</strong> et de rendre au fleuve son rôle central dans la vie économique, sociale et écologique.</p>
-            <a href="apropos.html" class="btn-link">Découvrir notre mission <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+            <p>ClassÃ©e au patrimoine mondial de l'UNESCO, Saint-Louis incarne l'histoire et la richesse culturelle de l'Afrique de l'Ouest. SurnommÃ©e la <strong>â€œRÃ©gion du Fleuveâ€</strong>, son dÃ©veloppement est liÃ© au fleuve SÃ©nÃ©gal.</p>
+            <p>Cependant, les berges, autrefois lieux de vie et de cÃ©lÃ©bration, sont aujourd'hui jonchÃ©es de dÃ©chets. <strong>The Flow SÃ©nÃ©gal ambitionne de changer cette rÃ©alitÃ©</strong> et de rendre au fleuve son rÃ´le central dans la vie Ã©conomique, sociale et Ã©cologique.</p>
+            <a href="apropos.html" class="btn-link">DÃ©couvrir notre mission <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
           </div>
           <div class="why-image">
             <!-- CORRECTION : chemin avec slashes normaux -->
-            <img src="images/paddels.jpeg" alt="Vue du fleuve Sénégal à Saint-Louis avec des pirogues traditionnelles">
-            <div class="image-caption">Le fleuve, artère vitale de Saint-Louis</div>
+            <img src="images/paddels.jpeg" alt="Vue du fleuve SÃ©nÃ©gal Ã  Saint-Louis avec des pirogues traditionnelles">
+            <div class="image-caption">Le fleuve, artÃ¨re vitale de Saint-Louis</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Chiffres clés -->
+    <!-- Chiffres clÃ©s -->
     <section class="stats-section">
       <div class="container">
         <div class="stats-grid">
           <div class="stat-item">
             <i class="fas fa-trash-alt" aria-hidden="true"></i>
             <div class="stat-number">1.2T</div>
-            <div class="stat-desc">déchets collectés en 2025</div>
+            <div class="stat-desc">dÃ©chets collectÃ©s en 2025</div>
           </div>
           <div class="stat-item">
             <i class="fas fa-child" aria-hidden="true"></i>
             <div class="stat-number">200+</div>
-            <div class="stat-desc">enfants sensibilisés</div>
+            <div class="stat-desc">enfants sensibilisÃ©s</div>
           </div>
           <div class="stat-item">
             <i class="fas fa-handshake" aria-hidden="true"></i>
@@ -115,7 +115,7 @@
           <div class="stat-item">
             <i class="fas fa-tree" aria-hidden="true"></i>
             <div class="stat-number">500</div>
-            <div class="stat-desc">arbres plantés d'ici 2026</div>
+            <div class="stat-desc">arbres plantÃ©s d'ici 2026</div>
           </div>
         </div>
       </div>
@@ -133,7 +133,7 @@
           <div class="action-card">
             <div class="action-icon"><i class="fas fa-water" aria-hidden="true"></i></div>
             <h3>Initiation paddle</h3>
-            <p>Découverte du fleuve sous un angle ludique pour les enfants du quartier de Diamaguène.</p>
+            <p>DÃ©couverte du fleuve sous un angle ludique pour les enfants du quartier de DiamaguÃ¨ne.</p>
           </div>
           <div class="action-card">
             <div class="action-icon"><i class="fas fa-broom" aria-hidden="true"></i></div>
@@ -143,26 +143,26 @@
           <div class="action-card">
             <div class="action-icon"><i class="fas fa-paintbrush" aria-hidden="true"></i></div>
             <h3>Fresques collectives</h3>
-            <p>Mise en valeur des quais par des animations et décorations artistiques.</p>
+            <p>Mise en valeur des quais par des animations et dÃ©corations artistiques.</p>
           </div>
           <div class="action-card">
             <div class="action-icon"><i class="fas fa-futbol" aria-hidden="true"></i></div>
             <h3>Match de gala</h3>
-            <p>Football et fraternité entre jeunes du quartier et bénévoles de The Flow Sénégal.</p>
+            <p>Football et fraternitÃ© entre jeunes du quartier et bÃ©nÃ©voles de The Flow SÃ©nÃ©gal.</p>
           </div>
           <div class="action-card">
             <div class="action-icon"><i class="fas fa-ship" aria-hidden="true"></i></div>
             <h3>Parade nautique</h3>
-            <p>Paddlers, kayakistes et la Fédération Sénégalaise de Canoë-Kayak sur le fleuve.</p>
+            <p>Paddlers, kayakistes et la FÃ©dÃ©ration SÃ©nÃ©galaise de CanoÃ«-Kayak sur le fleuve.</p>
           </div>
           <div class="action-card">
             <div class="action-icon"><i class="fas fa-chalkboard-user" aria-hidden="true"></i></div>
             <h3>Sensibilisation</h3>
-            <p>Rencontres avec commerçants, élus et médias pour une collaboration durable.</p>
+            <p>Rencontres avec commerÃ§ants, Ã©lus et mÃ©dias pour une collaboration durable.</p>
           </div>
         </div>
         <div class="text-center">
-          <a href="programme.html" class="btn btn-secondary">Voir le programme détaillé</a>
+          <a href="programme.html" class="btn btn-secondary">Voir le programme dÃ©taillÃ©</a>
         </div>
       </div>
     </section>
@@ -172,7 +172,7 @@
       <div class="container cta-container">
         <div class="cta-content">
           <h2>Rejoignez le mouvement</h2>
-          <p>The Flow Sénégal, ce n'est pas seulement un événement, c'est un mouvement pour un avenir plus respectueux de l'environnement. Ensemble, redonnons au fleuve Sénégal sa beauté.</p>
+          <p>The Flow SÃ©nÃ©gal, ce n'est pas seulement un Ã©vÃ©nement, c'est un mouvement pour un avenir plus respectueux de l'environnement. Ensemble, redonnons au fleuve SÃ©nÃ©gal sa beautÃ©.</p>
           <form class="cta-form" id="newsletterForm">
             <label for="newsletter-email" class="visually-hidden">Adresse email</label>
             <input type="email" id="newsletter-email" placeholder="Votre email" required>
@@ -188,8 +188,8 @@
   <footer class="site-footer">
     <div class="container footer-container">
       <div class="footer-col">
-        <div class="logo-footer">THE FLOW <span>Sénégal</span></div>
-        <p>Association citoyenne pour la protection du fleuve Sénégal et l'amélioration du cadre de vie.</p>
+        <div class="logo-footer">THE FLOW <span>SÃ©nÃ©gal</span></div>
+        <p>Association citoyenne pour la protection du fleuve SÃ©nÃ©gal et l'amÃ©lioration du cadre de vie.</p>
         <div class="social-links">
           <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
           <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
@@ -200,7 +200,7 @@
         <h4>Navigation</h4>
         <ul>
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="apropos.html">À propos</a></li>
+          <li><a href="apropos.html">Ã€ propos</a></li>
           <li><a href="programme.html">Programme</a></li>
           <li><a href="galerie.html">Galerie</a></li>
           <li><a href="partenaires.html">Partenaires</a></li>
@@ -210,19 +210,19 @@
       <div class="footer-col">
         <h4>Nous trouver</h4>
         <ul>
-          <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Diamaguène, près du dispensaire Sor</li>
-          <li><i class="fas fa-city" aria-hidden="true"></i> Saint-Louis, Sénégal</li>
+          <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> DiamaguÃ¨ne, prÃ¨s du dispensaire Sor</li>
+          <li><i class="fas fa-city" aria-hidden="true"></i> Saint-Louis, SÃ©nÃ©gal</li>
           <li><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:contact@theflowsenegal.org">contact@theflowsenegal.org</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Rejoignez-nous</h4>
-        <p>Soutenez l'initiative, devenez bénévole.</p>
+        <p>Soutenez l'initiative, devenez bÃ©nÃ©vole.</p>
         <a href="contact.html" class="btn-small">Nous contacter</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 The Flow Sénégal — Ensemble, redonnons vie au fleuve.</p>
+      <p>&copy; 2026 The Flow SÃ©nÃ©gal â€” Ensemble, redonnons vie au fleuve.</p>
     </div>
   </footer>
 
