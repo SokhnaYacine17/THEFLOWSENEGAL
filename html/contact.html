@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="The Flow Sénégal - Contactez-nous pour rejoindre le mouvement, devenir bénévole, partenaire ou simplement poser une question.">
+  <title>The Flow Sénégal | Contact - Nous contacter</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../CSS/style.css">
+
+  <style>
+    /* Styles spécifiques à la page Contact */
+    .contact-header {
+      background: linear-gradient(135deg, #0D2B28 0%, #1A4A42 100%);
+      padding: 160px 0 80px;
+      text-align: center;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact-header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('https://images.unsplash.com/photo-1523805009345-7448845a9e53?w=1920&h=600&fit=crop') center/cover no-repeat;
+      opacity: 0.25;
+      mix-blend-mode: overlay;
+    }
+
+    .contact-header h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .contact-header .highlight {
+      color: var(--accent);
+    }
+
+    .contact-header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+      opacity: 0.9;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Section Contact */
+    .contact-section {
+      padding: 80px 0;
+      background: var(--light);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+    }
+
+    /* Informations de contact */
+    .contact-info-box {
+      background: white;
+      border-radius: 24px;
+      padding: 40px;
+      box-shadow: var(--shadow);
+    }
+
+    .info-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: var(--dark);
+    }
+
+    .info-subtitle {
+      color: var(--gray);
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid var(--light);
+    }
+
+    .info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      margin-bottom: 25px;
+    }
+
+    .info-icon {
+      width: 50px;
+      height: 50px;
+      background: rgba(13, 92, 99, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .info-icon i {
+      font-size: 1.3rem;
+      color: var(--primary);
+    }
+
+    .info-content h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 5px;
+      color: var(--dark);
+    }
+
+    .info-content p, .info-content a {
+      color: var(--gray);
+      text-decoration: none;
+      transition: var(--transition);
+      line-height: 1.5;
+    }
+
+    .info-content a:hover {
+      color: var(--primary);
+    }
+
+    /* Réseaux sociaux */
+    .social-contact {
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 2px solid var(--light);
+    }
+
+    .social-contact h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .social-icons-contact {
+      display: flex;
+      gap: 15px;
+    }
+
+    .social-icons-contact a {
+      width: 40px;
+      height: 40px;
+      background: rgba(13, 92, 99, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+      transition: var(--transition);
+    }
+
+    .social-icons-contact a:hover {
+      background: var(--primary);
+      color: white;
+      transform: translateY(-3px);
+    }
+
+    /* Formulaire */
+    .contact-form-box {
+      background: white;
+      border-radius: 24px;
+      padding: 40px;
+      box-shadow: var(--shadow);
+    }
+
+    .form-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: var(--dark);
+    }
+
+    .form-subtitle {
+      color: var(--gray);
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid var(--light);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--dark);
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      font-family: 'Inter', sans-serif;
+      transition: var(--transition);
+      background: var(--light);
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(13, 92, 99, 0.1);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .btn-submit {
+      background: var(--primary);
+      color: white;
+      padding: 14px 30px;
+      border: none;
+      border-radius: 50px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: var(--transition);
+      width: 100%;
+      justify-content: center;
+    }
+
+    .btn-submit:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+
+    /* Carte */
+    .map-section {
+      padding: 0 0 80px;
+      background: var(--light);
+    }
+
+    .map-container {
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+    }
+
+    .map-note {
+      text-align: center;
+      margin-top: 15px;
+      color: var(--gray);
+      font-size: 0.85rem;
+    }
+
+    /* FAQ */
+    .faq-section {
+      padding: 80px 0;
+      background: var(--white);
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 30px;
+      margin-top: 50px;
+    }
+
+    .faq-item {
+      background: var(--light);
+      border-radius: 16px;
+      padding: 25px;
+      transition: var(--transition);
+    }
+
+    .faq-item:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow);
+    }
+
+    .faq-question {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .faq-question i {
+      color: var(--secondary);
+    }
+
+    .faq-answer {
+      color: var(--gray);
+      line-height: 1.6;
+      padding-left: 30px;
+    }
+
+    @media (max-width: 992px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .contact-header h1 {
+        font-size: 2.2rem;
+      }
+      .contact-info-box, .contact-form-box {
+        padding: 25px;
+      }
+      .faq-grid {
+        grid-template-columns: 1fr;
+      }
+      .map-container iframe {
+        height: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="logo">
+        <a href="index.html" aria-label="The Flow Sénégal - Retour à l'accueil">
+          <img src="../images/logoTFS.jpeg" alt="Logo de The Flow Sénégal" class="logo-image">
+          <span class="logo-text">THE FLOW<span class="accent"> Sénégal</span></span>
+        </a>
+      </div>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Accueil</a></li>
+          <li><a href="apropos.html" class="nav-link">À propos</a></li>
+          <li><a href="programme.html" class="nav-link">Programme</a></li>
+          <li><a href="galerie.html" class="nav-link">Galerie</a></li>
+          <li><a href="partenaires.html" class="nav-link">Partenaires</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+        <button type="button" class="mobile-toggle" aria-label="Menu" aria-expanded="false">
+          <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Header Contact -->
+    <section class="contact-header">
+      <div class="container">
+        <h1>Nous <span class="highlight">contacter</span></h1>
+        <p>Une question ? Une envie de nous rejoindre ? N'hésitez pas à nous écrire.</p>
+      </div>
+    </section>
+
+    <!-- Section Contact avec formulaire -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Informations de contact -->
+          <div class="contact-info-box">
+            <h2 class="info-title">📍 Nos coordonnées</h2>
+            <p class="info-subtitle">Retrouvez-nous à Saint-Louis ou contactez-nous en ligne.</p>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="info-content">
+                <h4>Adresse</h4>
+                <p>Diamaguène, près du dispensaire Sor<br>Saint-Louis, Sénégal</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-envelope"></i></div>
+              <div class="info-content">
+                <h4>Email</h4>
+                <a href="mailto:contact@theflowsenegal.org">contact@theflowsenegal.org</a>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+              <div class="info-content">
+                <h4>Téléphone</h4>
+                <!-- CORRECTION : espaces remplacés par &nbsp; -->
+                <a href="tel:+221771234567">+221&nbsp;77&nbsp;123&nbsp;45&nbsp;67</a>
+              </div>
+            </div>
+
+            <div class="social-contact">
+              <h4>Suivez-nous</h4>
+              <div class="social-icons-contact">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulaire de contact -->
+          <div class="contact-form-box">
+            <h2 class="form-title">📝 Envoyez-nous un message</h2>
+            <p class="form-subtitle">Nous vous répondrons dans les meilleurs délais.</p>
+
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Nom complet *</label>
+                <input type="text" id="name" name="name" required placeholder="Votre nom">
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required placeholder="votre@email.com">
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Téléphone</label>
+                <input type="tel" id="phone" name="phone" placeholder="+221 77 123 45 67">
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Sujet *</label>
+                <select id="subject" name="subject" required>
+                  <option value="">-- Sélectionnez un sujet --</option>
+                  <option value="Devenir bénévole">Devenir bénévole</option>
+                  <option value="Devenir partenaire">Devenir partenaire</option>
+                  <option value="Information événement">Information sur un événement</option>
+                  <option value="Presse / Médias">Presse / Médias</option>
+                  <option value="Autre demande">Autre demande</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" required placeholder="Votre message..."></textarea>
+              </div>
+
+              <button type="submit" class="btn-submit">
+                <i class="fas fa-paper-plane"></i> Envoyer le message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carte de localisation -->
+    <section class="map-section">
+      <div class="container">
+        <div class="map-container">
+          <!-- CORRECTION : attribut title ajouté -->
+          <iframe 
+            title="Carte de localisation de The Flow Sénégal à Diamaguène, Saint-Louis"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3856.789294450218!2d-16.5082269!3d16.0376288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec237cd6f7a38b1%3A0x8e5f8b5a5e5f8b5a!2sDiamagu%C3%A8ne%2C%20Saint-Louis%2C%20S%C3%A9n%C3%A9gal!5e0!3m2!1sfr!2sfr!4v1700000000000!5m2!1sfr!2sfr" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <p class="map-note"><i class="fas fa-map-pin"></i> Notre siège : Diamaguène, près du dispensaire Sor, Saint-Louis</p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Questions fréquentes</span>
+          <h2>Vous avez <span class="accent-text">des questions ?</span></h2>
+          <div class="divider"></div>
+        </div>
+
+        <div class="faq-grid">
+          <div class="faq-item">
+            <div class="faq-question">
+              <i class="fas fa-hands-helping"></i>
+              <span>Comment devenir bénévole ?</span>
+            </div>
+            <div class="faq-answer">
+              Il vous suffit de nous contacter via le formulaire ci-dessus en sélectionnant "Devenir bénévole" ou de nous envoyer un email. Nous vous recontacterons pour vous présenter les prochaines actions.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <i class="fas fa-handshake"></i>
+              <span>Comment devenir partenaire ?</span>
+            </div>
+            <div class="faq-answer">
+              Nous sommes ouverts aux partenariats institutionnels, associatifs et privés. Contactez-nous via le formulaire avec le sujet "Devenir partenaire" pour échanger sur les modalités.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <i class="fas fa-calendar-alt"></i>
+              <span>Quand sont les prochains événements ?</span>
+            </div>
+            <div class="faq-answer">
+              La 2ème édition du nettoiement des berges aura lieu les 17 et 18 mai 2026. Consultez notre page Programme pour plus de détails.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <i class="fas fa-school"></i>
+              <span>Comment inscrire mon école au programme ?</span>
+            </div>
+            <div class="faq-answer">
+              Nous proposons un programme de sensibilisation pour les écoles de Saint-Louis. Contactez-nous pour organiser des ateliers dans votre établissement.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Newsletter -->
+    <section class="cta-section">
+      <div class="container cta-container">
+        <div class="cta-content">
+          <h2>Restez informés</h2>
+          <p>Inscrivez-vous à notre newsletter pour suivre nos actualités et nos actions.</p>
+          <form class="cta-form" id="newsletterForm">
+            <label for="newsletter-email" class="visually-hidden">Adresse email</label>
+            <input type="email" id="newsletter-email" placeholder="Votre email" required>
+            <button type="submit" class="btn btn-primary">S'abonner <i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-col">
+        <div class="logo-footer">THE FLOW <span>Sénégal</span></div>
+        <p>Association citoyenne pour la protection du fleuve Sénégal et l'amélioration du cadre de vie.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="apropos.html">À propos</a></li>
+          <li><a href="programme.html">Programme</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="partenaires.html">Partenaires</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Nous trouver</h4>
+        <ul>
+          <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Diamaguène, près du dispensaire Sor</li>
+          <li><i class="fas fa-city" aria-hidden="true"></i> Saint-Louis, Sénégal</li>
+          <li><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:contact@theflowsenegal.org">contact@theflowsenegal.org</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Rejoignez-nous</h4>
+        <p>Soutenez l'initiative, devenez bénévole.</p>
+        <a href="contact.html" class="btn-small">Nous contacter</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 The Flow Sénégal — Ensemble, redonnons vie au fleuve.</p>
+    </div>
+  </footer>
+
+  <script src="../JS/main.js"></script>
+  <script>
+    // Formulaire de contact
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const subject = document.getElementById('subject').value;
+        
+        if (name && email && subject) {
+          alert(`Merci ${name} ! Votre message a bien été envoyé. Nous vous répondrons dans les plus brefs délais. 🌊`);
+          contactForm.reset();
+        } else {
+          alert('Veuillez remplir tous les champs obligatoires.');
+        }
+      });
+    }
+
+    // Newsletter form handler
+    const newsletterForm = document.getElementById('newsletterForm');
+    if (newsletterForm) {
+      newsletterForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const email = this.querySelector('input[type="email"]').value;
+        if (email && email.includes('@')) {
+          alert(`Merci ${email} ! Vous êtes maintenant inscrit(e) à notre newsletter. 🌊`);
+          this.reset();
+        } else {
+          alert('Veuillez entrer une adresse email valide.');
+        }
+      });
+    }
+  </script>
+</body>
+</html>
