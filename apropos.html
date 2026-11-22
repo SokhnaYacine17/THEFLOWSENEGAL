@@ -3,1081 +3,564 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="The Flow Sénégal - Association citoyenne pour la protection du fleuve Sénégal. Découvrez notre mission, notre impact et notre équipe.">
-  <title>The Flow Sénégal | À propos - Qui sommes-nous</title>
 
-  <!-- Polices, icônes -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta name="description" content="Découvrez The Flow Sénégal, son histoire, sa mission, ses objectifs et ses actions citoyennes pour préserver le fleuve Sénégal et son environnement à Saint-Louis.">
+  <meta name="theme-color" content="#14532d">
+  <meta name="author" content="The Flow Sénégal">
+
+  <title>À propos | The Flow Sénégal</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="CSS/style.css">
-
-  <style>
-    /* ========== VARIABLES ========== */
-    :root {
-      --primary: #0D5C63;
-      --primary-dark: #09454A;
-      --secondary: #C87A5A;
-      --secondary-dark: #B05E3E;
-      --accent: #E9B35F;
-      --dark: #1E2A2E;
-      --light: #FAF7F2;
-      --gray: #5C6A6F;
-      --white: #FFFFFF;
-      --shadow: 0 10px 30px rgba(0,0,0,0.08);
-      --shadow-hover: 0 20px 40px rgba(0,0,0,0.12);
-      --transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      color: var(--dark);
-      background: var(--light);
-      overflow-x: hidden;
-    }
-
-    /* ========== NAVBAR ========== */
-    .header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background: rgba(255, 255, 255, 0.98);
-      backdrop-filter: blur(10px);
-      z-index: 1000;
-      padding: 1rem 0;
-      transition: var(--transition);
-      box-shadow: 0 2px 20px rgba(0,0,0,0.05);
-    }
-
-    .header.scrolled {
-      padding: 0.7rem 0;
-      box-shadow: 0 5px 30px rgba(0,0,0,0.1);
-    }
-
-    .container {
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 0 32px;
-    }
-
-    .nav-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo img {
-      height: 50px;
-    }
-
-    .nav-menu ul {
-      display: flex;
-      list-style: none;
-      gap: 2rem;
-    }
-
-    .nav-menu ul li a {
-      text-decoration: none;
-      font-weight: 600;
-      color: var(--dark);
-      transition: var(--transition);
-    }
-
-    .nav-menu ul li a:hover,
-    .nav-menu ul li a.active {
-      color: var(--primary);
-    }
-
-    .mobile-toggle {
-      display: none;
-      background: none;
-      border: none;
-      font-size: 1.5rem;
-      cursor: pointer;
-      color: var(--dark);
-    }
-
-    /* ========== HERO ========== */
-    .hero-stats {
-      background: linear-gradient(135deg, #0D2B28 0%, #1A4A42 100%);
-      padding: 160px 0 80px;
-      text-align: center;
-      color: white;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero-stats::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: url('images/flowban.webp') center/cover no-repeat;
-      opacity: 0.25;
-      mix-blend-mode: overlay;
-    }
-
-    .hero-stats h1 {
-      font-size: 3rem;
-      font-weight: 800;
-      margin-bottom: 1rem;
-      position: relative;
-      z-index: 2;
-    }
-
-    .hero-stats p {
-      font-size: 1.1rem;
-      max-width: 700px;
-      margin: 0 auto;
-      opacity: 0.9;
-      position: relative;
-      z-index: 2;
-    }
-
-    /* ========== QUI SOMMES-NOUS ========== */
-    .about-deep {
-      padding: 100px 0;
-      background: var(--light);
-    }
-
-    .about-deep-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      align-items: center;
-    }
-
-    .about-deep-text h2 {
-      font-size: 2.2rem;
-      font-weight: 700;
-      margin-bottom: 20px;
-      color: var(--dark);
-    }
-
-    .about-deep-separator {
-      width: 60px;
-      height: 4px;
-      background: var(--secondary);
-      margin-bottom: 25px;
-    }
-
-    .about-deep-text p {
-      color: var(--gray);
-      line-height: 1.7;
-      margin-bottom: 1.2rem;
-    }
-
-    .about-deep-stats {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 30px;
-    }
-
-    .deep-stat-item {
-      text-align: center;
-      padding: 30px 20px;
-      background: white;
-      border-radius: 20px;
-      box-shadow: var(--shadow);
-      transition: var(--transition);
-    }
-
-    .deep-stat-item:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow-hover);
-    }
-
-    .deep-stat-number {
-      font-size: 2.5rem;
-      font-weight: 800;
-      color: var(--primary);
-    }
-
-    .deep-stat-label {
-      color: var(--gray);
-      font-weight: 500;
-      margin-top: 8px;
-    }
-
-    /* ========== POURQUOI SAINT-LOUIS ========== */
-    .why-saintlouis {
-      padding: 100px 0;
-      background: var(--white);
-    }
-
-    .why-saintlouis-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      align-items: center;
-    }
-
-    .why-saintlouis-text p {
-      color: var(--gray);
-      line-height: 1.7;
-      margin-bottom: 1.2rem;
-    }
-
-    .stats-highlight {
-      display: flex;
-      gap: 40px;
-      margin-top: 30px;
-      padding-top: 20px;
-      border-top: 2px solid rgba(0,0,0,0.05);
-    }
-
-    .highlight-stat {
-      text-align: left;
-    }
-
-    .highlight-number {
-      font-size: 1.8rem;
-      font-weight: 800;
-      color: var(--primary);
-      display: block;
-      line-height: 1.2;
-    }
-
-    .highlight-label {
-      font-size: 0.85rem;
-      color: var(--gray);
-    }
-
-    .why-saintlouis-image img {
-      width: 100%;
-      border-radius: 24px;
-      box-shadow: var(--shadow);
-    }
-
-    .image-caption {
-      text-align: center;
-      font-size: 0.85rem;
-      color: var(--gray);
-      margin-top: 12px;
-    }
-
-    /* ========== HISTOIRE ENTRE LES FLEUVES ========== */
-    .fleuve-connection {
-      padding: 100px 0;
-      background: linear-gradient(135deg, #0D2B28 0%, #1A4A42 100%);
-      color: white;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .fleuve-connection::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: url('https://images.unsplash.com/photo-1502920514313-52581002a659?w=1920&h=400&fit=crop') center/cover no-repeat;
-      opacity: 0.1;
-      mix-blend-mode: overlay;
-    }
-
-    .connection-content {
-      position: relative;
-      z-index: 2;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    .connection-icon {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin-bottom: 30px;
-    }
-
-    .connection-icon i {
-      font-size: 2.5rem;
-      color: var(--accent);
-      background: rgba(255,255,255,0.1);
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: transform 0.3s ease;
-    }
-
-    .connection-icon i:hover {
-      transform: scale(1.1);
-    }
-
-    .connection-content h2 {
-      font-size: 2.2rem;
-      font-weight: 700;
-      margin-bottom: 20px;
-    }
-
-    .connection-separator {
-      width: 80px;
-      height: 3px;
-      background: var(--accent);
-      margin: 0 auto 30px;
-      border-radius: 2px;
-    }
-
-    .connection-content p {
-      font-size: 1.2rem;
-      line-height: 1.7;
-      opacity: 0.95;
-      margin-bottom: 20px;
-    }
-
-    .connection-quote {
-      font-size: 1.4rem;
-      font-style: italic;
-      color: var(--accent);
-      font-weight: 500;
-      margin: 30px 0;
-    }
-
-    .connection-flags {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-      margin-top: 40px;
-    }
-
-    .connection-flags span {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(255,255,255,0.1);
-      padding: 8px 20px;
-      border-radius: 50px;
-    }
-
-    /* ========== MISSION & VISION ========== */
-    .mission-values {
-      padding: 80px 0;
-      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-      color: white;
-    }
-
-    .mission-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 40px;
-    }
-
-    .mission-box {
-      text-align: center;
-      padding: 40px;
-      background: rgba(255,255,255,0.1);
-      border-radius: 24px;
-      backdrop-filter: blur(10px);
-    }
-
-    .mission-box i {
-      font-size: 2.5rem;
-      color: var(--accent);
-      margin-bottom: 20px;
-    }
-
-    .mission-box h3 {
-      font-size: 1.5rem;
-      margin-bottom: 15px;
-    }
-
-    .mission-box p {
-      line-height: 1.6;
-    }
-
-    /* ========== VALEURS / AXES D'ACTION ========== */
-    .values-section {
-      padding: 100px 0;
-      background: var(--light);
-      text-align: center;
-    }
-
-    .section-title {
-      font-size: 2.2rem;
-      font-weight: 700;
-      margin-bottom: 20px;
-    }
-
-    .section-separator {
-      width: 80px;
-      height: 4px;
-      background: var(--secondary);
-      margin: 0 auto 50px;
-      border-radius: 2px;
-    }
-
-    .values-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 30px;
-      margin-top: 50px;
-    }
-
-    .value-card {
-      background: white;
-      padding: 30px;
-      border-radius: 20px;
-      transition: var(--transition);
-      box-shadow: var(--shadow);
-    }
-
-    .value-card:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow-hover);
-    }
-
-    .value-card i {
-      font-size: 2rem;
-      color: var(--primary);
-      margin-bottom: 15px;
-    }
-
-    .value-card h3 {
-      font-size: 1.2rem;
-      margin-bottom: 10px;
-    }
-
-    .value-card p {
-      color: var(--gray);
-      font-size: 0.9rem;
-    }
-
-    /* ========== SECTION HEADER ========== */
-    .section-header {
-      text-align: center;
-      margin-bottom: 48px;
-    }
-
-    .section-tag {
-      display: inline-block;
-      background: rgba(13, 92, 99, 0.1);
-      color: var(--primary);
-      padding: 6px 16px;
-      border-radius: 50px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
-      letter-spacing: 0.5px;
-    }
-
-    .divider {
-      width: 60px;
-      height: 4px;
-      background: var(--secondary);
-      margin: 20px auto;
-      border-radius: 2px;
-    }
-
-    .accent-text {
-      color: var(--accent);
-    }
-
-    /* ========== ÉQUIPE ========== */
-    .team-section {
-      padding: 80px 0;
-      background: var(--white);
-    }
-
-    .team-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 40px;
-      margin-top: 50px;
-    }
-
-    .team-card {
-      background: white;
-      border-radius: 24px;
-      overflow: hidden;
-      transition: var(--transition);
-      box-shadow: var(--shadow);
-      text-align: center;
-    }
-
-    .team-card:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow-hover);
-    }
-
-    .team-image {
-      width: 100%;
-      height: 280px;
-      overflow: hidden;
-    }
-
-    .team-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.3s ease;
-    }
-
-    .team-card:hover .team-image img {
-      transform: scale(1.05);
-    }
-
-    .team-card h3 {
-      font-size: 1.3rem;
-      font-weight: 700;
-      margin-top: 1.5rem;
-      margin-bottom: 0.25rem;
-    }
-
-    .team-role {
-      color: var(--primary);
-      font-weight: 600;
-      font-size: 0.85rem;
-      margin-bottom: 0.75rem;
-    }
-
-    .team-bio {
-      color: var(--gray);
-      padding: 0 1.5rem 1.5rem;
-      line-height: 1.6;
-    }
-
-    /* ========== PARTENAIRES ========== */
-    .partners-data {
-      padding: 80px 0;
-      background: var(--light);
-      text-align: center;
-    }
-
-    .partners-logos-grid {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 40px;
-      margin-top: 50px;
-    }
-
-    .partner-logo-item {
-      text-align: center;
-      padding: 20px 30px;
-      background: white;
-      border-radius: 16px;
-      transition: var(--transition);
-      box-shadow: var(--shadow);
-    }
-
-    .partner-logo-item i {
-      font-size: 2rem;
-      color: var(--primary);
-      display: block;
-      margin-bottom: 10px;
-    }
-
-    .partner-logo-item span {
-      font-weight: 600;
-      color: var(--dark);
-    }
-
-    .partner-logo-item:hover {
-      transform: translateY(-3px);
-      background: var(--primary);
-    }
-
-    .partner-logo-item:hover i,
-    .partner-logo-item:hover span {
-      color: white;
-    }
-
-    /* ========== CTA ========== */
-    .cta-section {
-      background: linear-gradient(135deg, #0D2B28 0%, #1A4A42 100%);
-      padding: 80px 0;
-      text-align: center;
-      color: white;
-    }
-
-    .cta-section h2 {
-      font-size: 1.8rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .cta-section p {
-      opacity: 0.9;
-      margin-bottom: 2rem;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .btn-primary {
-      background: var(--secondary);
-      color: var(--dark);
-      padding: 14px 36px;
-      border-radius: 50px;
-      font-weight: 600;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      transition: var(--transition);
-    }
-
-    .btn-primary:hover {
-      background: var(--secondary-dark);
-      transform: translateY(-3px);
-      box-shadow: var(--shadow-hover);
-    }
-
-    /* ========== FOOTER ========== */
-    .footer {
-      background: var(--dark);
-      color: #B0C4C0;
-      padding: 60px 0 20px;
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 40px;
-      margin-bottom: 40px;
-    }
-
-    .footer-logo {
-      font-size: 1.5rem;
-      font-weight: 800;
-      margin-bottom: 1rem;
-    }
-
-    .footer-logo span {
-      color: var(--secondary);
-    }
-
-    .social-links {
-      display: flex;
-      gap: 15px;
-      margin-top: 20px;
-    }
-
-    .social-links a {
-      width: 36px;
-      height: 36px;
-      background: rgba(255,255,255,0.1);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #B0C4C0;
-      transition: var(--transition);
-    }
-
-    .social-links a:hover {
-      background: var(--secondary);
-      color: var(--dark);
-    }
-
-    .footer h4 {
-      color: white;
-      margin-bottom: 1rem;
-      font-size: 1.1rem;
-    }
-
-    .footer ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .footer ul li {
-      margin-bottom: 0.75rem;
-    }
-
-    .footer ul li a {
-      color: #B0C4C0;
-      text-decoration: none;
-      transition: var(--transition);
-    }
-
-    .footer ul li a:hover {
-      color: var(--secondary);
-    }
-
-    .btn-small {
-      display: inline-block;
-      background: var(--secondary);
-      color: var(--dark);
-      padding: 10px 24px;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 0.9rem;
-      transition: var(--transition);
-      margin-top: 15px;
-    }
-
-    .btn-small:hover {
-      background: var(--secondary-dark);
-      transform: translateY(-3px);
-    }
-
-    .footer-bottom {
-      text-align: center;
-      padding-top: 30px;
-      margin-top: 40px;
-      border-top: 1px solid rgba(255,255,255,0.1);
-    }
-
-    /* ========== BUTTON GROUP ========== */
-    .btn-group-cta {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .btn-outline-light {
-      background: transparent;
-      border: 2px solid white;
-      color: white;
-      padding: 14px 36px;
-      border-radius: 50px;
-      font-weight: 600;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      transition: var(--transition);
-    }
-
-    .btn-outline-light:hover {
-      background: white;
-      color: var(--primary);
-      transform: translateY(-3px);
-    }
-
-    /* ========== RESPONSIVE ========== */
-    @media (max-width: 992px) {
-      .about-deep-grid,
-      .why-saintlouis-grid {
-        grid-template-columns: 1fr;
-      }
-      .mission-grid {
-        grid-template-columns: 1fr;
-      }
-      .values-grid,
-      .team-grid,
-      .footer-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .stats-highlight {
-        justify-content: center;
-      }
-      .highlight-stat {
-        text-align: center;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .mobile-toggle {
-        display: block;
-      }
-      .nav-menu {
-        position: fixed;
-        top: 80px;
-        left: -100%;
-        width: 100%;
-        background: white;
-        padding: 30px;
-        transition: 0.3s;
-        box-shadow: var(--shadow);
-      }
-      .nav-menu.active {
-        left: 0;
-      }
-      .nav-menu ul {
-        flex-direction: column;
-        align-items: center;
-      }
-      .values-grid,
-      .team-grid,
-      .footer-grid {
-        grid-template-columns: 1fr;
-      }
-      .hero-stats h1 {
-        font-size: 2rem;
-      }
-      .container {
-        padding: 0 20px;
-      }
-      .cta-section h2 {
-        font-size: 1.4rem;
-      }
-      .connection-content h2 {
-        font-size: 1.6rem;
-      }
-      .connection-quote {
-        font-size: 1.1rem;
-      }
-      .connection-flags {
-        flex-direction: column;
-        gap: 10px;
-      }
-      .connection-flags span {
-        width: 100%;
-        justify-content: center;
-      }
-      .connection-flags span:nth-child(2) {
-        transform: rotate(90deg);
-      }
-      .btn-group-cta {
-        flex-direction: column;
-        align-items: center;
-      }
-      .btn-outline-light {
-        width: 100%;
-        justify-content: center;
-      }
-    }
-  </style>
 </head>
+
 <body>
 
-<!-- ========== HEADER ========== -->
-<header class="header">
-  <div class="container">
-    <div class="nav-container">
-      <a href="index.html" class="logo">
-        <img src="images/logoTFS.jpeg" alt="The Flow Sénégal">
+  <!-- EN-TÊTE COMMUN -->
+  <header class="site-header">
+    <div class="container header-container">
+
+      <a href="index.html" class="logo" aria-label="The Flow Sénégal, accueil">
+        <img src="images/logoTFS.jpeg" alt="Logo The Flow Sénégal" class="logo-image" width="53" height="53">
+        <span class="logo-text">
+          THE FLOW <span class="accent">Sénégal</span>
+        </span>
       </a>
-      <button type="button" class="mobile-toggle" id="mobileToggle" aria-label="Menu">
-        <i class="fas fa-bars"></i>
+
+      <button class="mobile-toggle" type="button"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+        aria-controls="mainNavigation">
+        <i class="fas fa-bars" aria-hidden="true"></i>
       </button>
-      <nav class="nav-menu" id="navMenu">
+
+      <nav class="main-nav" id="mainNavigation" aria-label="Navigation principale">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Accueil</a></li>
+          <li><a href="apropos.html" class="nav-link active" aria-current="page">À propos</a></li>
+          <li><a href="programme.html" class="nav-link">Programme</a></li>
+          <li><a href="galerie.html" class="nav-link">Galerie</a></li>
+          <li><a href="partenaires.html" class="nav-link">Partenaires</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- BANNIÈRE DE LA PAGE -->
+    <section class="about-hero">
+      <div class="about-hero-overlay"></div>
+
+      <div class="container about-hero-content">
+        <span class="hero-badge">
+          <i class="fas fa-leaf" aria-hidden="true"></i>
+          Notre identité, notre engagement
+        </span>
+
+        <p class="hero-eyebrow">THE FLOW SÉNÉGAL · ASSOCIATION CITOYENNE</p>
+
+        <h1 class="hero-title">
+          Qui sommes-nous ?
+          <span class="highlight">Agir ensemble pour le fleuve Sénégal</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Une communauté engagée pour la protection du fleuve, de ses berges
+          et de son environnement immédiat à Saint-Louis.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#notre-mission" class="btn btn-primary">
+            Découvrir notre mission
+            <i class="fas fa-arrow-down" aria-hidden="true"></i>
+          </a>
+
+          <a href="contact.html" class="btn btn-outline">
+            Nous rejoindre
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-wave" aria-hidden="true">
+        <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
+          <path d="M0,35 C180,90 320,5 500,35 S830,90 1000,35 S1150,15 1200,35 L1200,100 L0,100 Z"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- PRÉSENTATION -->
+    <section class="section about-intro" id="notre-identite">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag">Notre identité</span>
+          <h2>Une association au service de <span class="accent-text">notre environnement</span></h2>
+          <div class="divider"></div>
+          <p>
+            Une ambition commune : faire de la préservation du fleuve
+            une responsabilité partagée.
+          </p>
+        </div>
+
+        <div class="about-intro-grid">
+          <div class="about-intro-image">
+            <img
+              src="images/pont.webp"
+              alt="Membres de The Flow Sénégal avec leurs paddles et la bannière de l'association devant le pont Faidherbe"
+              width="1920" height="1440"
+              loading="lazy"
+            >
+            <div class="about-image-caption">
+              <i class="fas fa-water" aria-hidden="true"></i>
+              Saint-Louis, Sénégal
+            </div>
+          </div>
+
+          <div class="about-intro-copy">
+            <span class="section-tag">Qui sommes-nous ?</span>
+            <h3>Une communauté mobilisée autour du fleuve</h3>
+
+            <p>
+              <strong>The Flow Sénégal</strong> est une association citoyenne
+              engagée dans la protection du fleuve Sénégal et de son
+              environnement immédiat à Saint-Louis.
+            </p>
+
+            <p>
+              Notre démarche encourage la participation des habitants,
+              des jeunes, des bénévoles, des associations et des partenaires
+              à des initiatives en faveur d'un cadre de vie plus propre,
+              plus sain et plus durable.
+            </p>
+
+            <p>
+              Au-delà des actions sur le terrain, nous souhaitons renforcer
+              la sensibilisation environnementale et encourager chacun
+              à prendre part à la préservation de ce patrimoine commun.
+            </p>
+
+            <a href="programme.html" class="text-link">
+              Découvrir nos programmes
+              <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SAINT-LOUIS -->
+    <section class="section about-territory">
+      <div class="container">
+
+        <div class="about-territory-grid">
+          <div class="about-territory-copy">
+            <span class="section-tag">Notre territoire</span>
+            <h2>Saint-Louis, une ville intimement liée <span class="accent-text">au fleuve</span></h2>
+            <div class="divider"></div>
+
+            <p>
+              Située au nord du Sénégal, Saint-Louis est une ville historique
+              dont l'identité est profondément liée au fleuve Sénégal,
+              à son estuaire et aux activités des communautés riveraines.
+            </p>
+
+            <p>
+              Le fleuve participe au paysage, à la vie quotidienne et à
+              l'attractivité du territoire. Ses berges et les espaces qui
+              l'entourent constituent un patrimoine naturel précieux qui
+              mérite attention et protection.
+            </p>
+
+            <p>
+              Préserver cet environnement, c'est aussi encourager des
+              comportements responsables, protéger les espaces fréquentés
+              par les habitants et transmettre aux générations futures
+              le respect de leur cadre de vie.
+            </p>
+
+            <a href="contact.html" class="btn btn-primary">
+              Agir avec nous
+              <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <div class="about-territory-panel">
+            <img src="images/saintlouis.jpg" alt="Pirogues colorées sur le fleuve à Saint-Louis"
+                 class="territory-photo" width="612" height="410" loading="lazy">
+            <div class="territory-icon">
+              <i class="fas fa-location-dot" aria-hidden="true"></i>
+            </div>
+            <span class="section-tag">Saint-Louis, Sénégal</span>
+            <h3>Un patrimoine naturel commun</h3>
+            <p>
+              Protéger le fleuve et ses alentours, c'est prendre soin
+              de notre territoire et des communautés qui y vivent.
+            </p>
+
+            <ul class="check-list">
+              <li><i class="fas fa-circle-check" aria-hidden="true"></i> Préserver les berges</li>
+              <li><i class="fas fa-circle-check" aria-hidden="true"></i> Respecter les espaces naturels</li>
+              <li><i class="fas fa-circle-check" aria-hidden="true"></i> Mobiliser les communautés</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LES MENACES ENVIRONNEMENTALES -->
+    <section class="section about-threats" id="enjeux">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag">Comprendre les enjeux</span>
+          <h2>Un environnement à protéger <span class="accent-text">durablement</span></h2>
+          <div class="divider"></div>
+          <p>
+            Plusieurs enjeux environnementaux appellent à la vigilance
+            et à une mobilisation collective autour du fleuve et de ses abords.
+          </p>
+        </div>
+
+        <div class="about-threats-grid">
+
+          <article class="about-threat-card">
+            <div class="about-threat-icon">
+              <i class="fas fa-water" aria-hidden="true"></i>
+            </div>
+            <h3>Montée des eaux et changements climatiques</h3>
+            <p>
+              Les évolutions du climat et les risques liés à l'eau
+              soulignent l'importance de mieux protéger les territoires
+              riverains et leurs communautés.
+            </p>
+          </article>
+
+          <article class="about-threat-card">
+            <div class="about-threat-icon">
+              <i class="fas fa-house-crack" aria-hidden="true"></i>
+            </div>
+            <h3>Érosion côtière</h3>
+            <p>
+              Le recul du littoral représente un enjeu important pour
+              les espaces côtiers, les activités humaines et la préservation
+              des milieux naturels de la région.
+            </p>
+          </article>
+
+          <article class="about-threat-card">
+            <div class="about-threat-icon">
+              <i class="fas fa-trash-can" aria-hidden="true"></i>
+            </div>
+            <h3>Déchets et insalubrité</h3>
+            <p>
+              Les déchets abandonnés sur les plages, les berges et les
+              espaces publics dégradent le cadre de vie et nécessitent
+              des actions de sensibilisation et de nettoyage.
+            </p>
+          </article>
+
+          <article class="about-threat-card">
+            <div class="about-threat-icon">
+              <i class="fas fa-seedling" aria-hidden="true"></i>
+            </div>
+            <h3>Fragilité des espaces naturels</h3>
+            <p>
+              Les espaces riverains ont besoin de pratiques respectueuses
+              pour préserver leur qualité, leur usage collectif et leur
+              valeur pour les générations futures.
+            </p>
+          </article>
+
+        </div>
+
+        <div class="about-awareness">
+          <div class="about-awareness-icon">
+            <i class="fas fa-lightbulb" aria-hidden="true"></i>
+          </div>
+          <div>
+            <h3>La sensibilisation est essentielle</h3>
+            <p>
+              Informer, mobiliser et agir ensemble permet de faire progresser
+              les comportements responsables et de renforcer la protection
+              de notre environnement.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- NOTRE MISSION -->
+    <section class="section about-mission" id="notre-mission">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag">Notre mission</span>
+          <h2>Des engagements concrets pour <span class="accent-text">notre avenir</span></h2>
+          <div class="divider"></div>
+          <p>
+            Promouvoir une culture de responsabilité environnementale
+            grâce à l'action citoyenne, à la sensibilisation et au partage.
+          </p>
+        </div>
+
+        <div class="about-mission-grid">
+
+          <article class="about-mission-card">
+            <span class="about-mission-number">01</span>
+            <div class="about-mission-icon">
+              <i class="fas fa-broom" aria-hidden="true"></i>
+            </div>
+            <h3>Protéger</h3>
+            <p>
+              Contribuer à la propreté des berges et des espaces riverains
+              par des initiatives citoyennes adaptées.
+            </p>
+          </article>
+
+          <article class="about-mission-card">
+            <span class="about-mission-number">02</span>
+            <div class="about-mission-icon">
+              <i class="fas fa-bullhorn" aria-hidden="true"></i>
+            </div>
+            <h3>Sensibiliser</h3>
+            <p>
+              Encourager les bons gestes et faire connaître les enjeux
+              de la préservation du fleuve et de son environnement.
+            </p>
+          </article>
+
+          <article class="about-mission-card">
+            <span class="about-mission-number">03</span>
+            <div class="about-mission-icon">
+              <i class="fas fa-people-group" aria-hidden="true"></i>
+            </div>
+            <h3>Mobiliser</h3>
+            <p>
+              Réunir habitants, jeunes, bénévoles, associations et partenaires
+              autour d'objectifs communs.
+            </p>
+          </article>
+
+          <article class="about-mission-card">
+            <span class="about-mission-number">04</span>
+            <div class="about-mission-icon">
+              <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+            </div>
+            <h3>Transmettre</h3>
+            <p>
+              Favoriser l'éducation environnementale et transmettre aux
+              nouvelles générations le respect du patrimoine naturel.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- NOS VALEURS -->
+    <section class="section about-values">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag">Ce qui nous rassemble</span>
+          <h2>Nos valeurs, la force de <span class="accent-text">notre engagement</span></h2>
+          <div class="divider"></div>
+        </div>
+
+        <div class="about-values-grid">
+
+          <div class="about-value">
+            <i class="fas fa-hands-holding-circle" aria-hidden="true"></i>
+            <h3>Solidarité</h3>
+            <p>Agir ensemble et encourager l'entraide au service du bien commun.</p>
+          </div>
+
+          <div class="about-value">
+            <i class="fas fa-leaf" aria-hidden="true"></i>
+            <h3>Responsabilité</h3>
+            <p>Adopter des pratiques respectueuses du fleuve et de son environnement.</p>
+          </div>
+
+          <div class="about-value">
+            <i class="fas fa-users" aria-hidden="true"></i>
+            <h3>Participation</h3>
+            <p>Donner à chacun la possibilité de contribuer à une action collective.</p>
+          </div>
+
+          <div class="about-value">
+            <i class="fas fa-heart" aria-hidden="true"></i>
+            <h3>Engagement</h3>
+            <p>Transformer la volonté de protéger notre territoire en actions concrètes.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SUR LE TERRAIN -->
+    <section class="section gallery-section about-field">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag">Sur le terrain</span>
+          <h2>Une association <span class="accent-text">qui agit</span></h2>
+          <div class="divider"></div>
+          <p>Nettoyages des berges, découverte du fleuve en paddle, initiation des jeunes : nos valeurs se vivent au quotidien.</p>
+        </div>
+
+        <div class="gallery-grid gallery-3">
+          <a href="galerie.html" class="gallery-item"><img src="images/WhatsApp%20Image%202026-09-25%20at%2017.15.31%20%283%29.jpeg" alt="Bénévoles et sacs de déchets collectés sur les berges" loading="lazy" width="1280" height="960"></a>
+          <a href="galerie.html" class="gallery-item"><img src="images/WhatsApp%20Image%202026-10-07%20at%2021.05.32%20%281%29.jpeg" alt="Jeunes et encadrants devant le pont Faidherbe avec leurs kayaks" loading="lazy" width="1080" height="1125"></a>
+          <a href="galerie.html" class="gallery-item"><img src="images/flowban.webp" alt="Pagayeurs en paddle sur le fleuve à Saint-Louis" loading="lazy" width="1440" height="1440"></a>
+        </div>
+
+        <div class="section-action">
+          <a href="galerie.html" class="btn btn-primary">Voir toute la galerie <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- LE PRÉSIDENT -->
+    <section class="section about-president">
+      <div class="container">
+
+        <div class="about-president-card">
+          <img src="images/papembaye.webp" alt="Pape Mbaye, président de The Flow Sénégal"
+               class="about-president-photo" width="347" height="347" loading="lazy">
+
+          <div class="about-president-content">
+            <span class="section-tag">Notre engagement</span>
+            <blockquote>
+              « Notre engagement est de protéger le fleuve Sénégal,
+              de préserver ses berges et son environnement immédiat,
+              et de transmettre aux générations futures le respect
+              de ce patrimoine naturel commun. »
+            </blockquote>
+
+            <div class="about-president-signature">
+              <span class="about-president-line"></span>
+              <div>
+                <strong>Pape Mbaye</strong>
+                <span>Président de The Flow Sénégal</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- APPEL À L'ACTION -->
+    <section class="commitment-section about-cta">
+      <div class="commitment-overlay"></div>
+
+      <div class="container commitment-content">
+        <span class="section-tag">Rejoignez le mouvement</span>
+
+        <h2>
+          Le fleuve nous unit.<br>
+          <span>Sa préservation nous rassemble.</span>
+        </h2>
+
+        <p>
+          Chaque personne peut contribuer à la protection du fleuve Sénégal.
+          Rejoignez une communauté qui souhaite agir pour un environnement
+          plus propre, plus sain et plus durable.
+        </p>
+
+        <a href="contact.html" class="btn btn-light">
+          Participer à nos actions
+          <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PIED DE PAGE COMMUN -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+
+      <div class="footer-col footer-about">
+        <a href="index.html" class="footer-brand">
+          <img src="images/logoTFS.jpeg" alt="" class="footer-logo" width="47" height="47" loading="lazy">
+          <span>THE FLOW <strong>Sénégal</strong></span>
+        </a>
+
+        <p>
+          Association citoyenne engagée pour la protection du fleuve Sénégal,
+          de ses berges et de son environnement immédiat.
+        </p>
+
+        <div class="social-links">
+          <!-- Remplacer les # par les liens officiels -->
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3>Navigation</h3>
         <ul>
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="apropos.html" class="active">À propos</a></li>
+          <li><a href="apropos.html" aria-current="page">À propos</a></li>
           <li><a href="programme.html">Programme</a></li>
           <li><a href="galerie.html">Galerie</a></li>
           <li><a href="partenaires.html">Partenaires</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-      </nav>
+      </div>
+
+      <div class="footer-col">
+        <h3>Nous trouver</h3>
+        <ul class="contact-list">
+          <li>
+            <i class="fas fa-location-dot" aria-hidden="true"></i>
+            <span>Diamaguène, près du dispensaire Sor, Saint-Louis, Sénégal</span>
+          </li>
+          <li>
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            <a href="mailto:contact@theflowsenegal.org">contact@theflowsenegal.org</a>
+          </li>
+          <li>
+            <i class="fas fa-globe" aria-hidden="true"></i>
+            <a href="https://theflowsenegal.onrender.com/" target="_blank" rel="noopener noreferrer">
+              Notre site internet
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-join">
+        <h3>Agissons ensemble</h3>
+        <p>
+          La préservation du fleuve et de son environnement commence
+          par l'engagement de chacun.
+        </p>
+        <a href="contact.html" class="btn btn-primary">Rejoindre l'association</a>
+      </div>
+
     </div>
-  </div>
-</header>
 
-<!-- ========== HERO ========== -->
-<section class="hero-stats">
-  <div class="container">
-    <h1>🌊 The Flow Sénégal</h1>
-    <p>Le fleuve Sénégal comme point de départ d'un mouvement citoyen.</p>
-  </div>
-</section>
-
-<!-- ========== QUI SOMMES-NOUS ========== -->
-<section class="about-deep">
-  <div class="container">
-    <div class="about-deep-grid">
-      <div class="about-deep-text">
-        <h2>🌟 Qui sommes-nous ?</h2>
-        <div class="about-deep-separator"></div>
-        <p>En mai 2025, The Flow s'est invité à Saint-Louis du Sénégal, porté par l'association <strong>The Flow Sénégal</strong> et <strong>Pape Mbaye</strong>, pour une première édition locale qui a réuni habitants, associations, sportifs et enfants autour d'un même élan : <strong>prendre soin du fleuve, tout en célébrant la vie qu'il relie</strong>.</p>
-        <p>Ce fut le début d'un mouvement : <strong>une alliance entre nature, culture et jeunesse</strong>, ancrée au cœur du delta du Sénégal.</p>
-        <p>Aujourd'hui, l'association est officiellement installée à <strong>Diamaguène, près du dispensaire Sor, à Saint-Louis</strong>. Nous agissons chaque jour pour restaurer les berges, sensibiliser les jeunes et redonner au fleuve sa place centrale dans la vie des Saint-Louisiens.</p>
-      </div>
-      <div class="about-deep-stats">
-        <div class="deep-stat-item"><div class="deep-stat-number">300+</div><div class="deep-stat-label">personnes mobilisées</div></div>
-        <div class="deep-stat-item"><div class="deep-stat-number">2</div><div class="deep-stat-label">jours d'action</div></div>
-        <div class="deep-stat-item"><div class="deep-stat-number">15+</div><div class="deep-stat-label">partenaires</div></div>
-        <div class="deep-stat-item"><div class="deep-stat-number">1.2T</div><div class="deep-stat-label">déchets collectés</div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ========== POURQUOI SAINT-LOUIS ? ========== -->
-<section class="why-saintlouis">
-  <div class="container">
-    <div class="why-saintlouis-grid">
-      <div class="why-saintlouis-text">
-        <span class="section-tag">Pourquoi Saint-Louis ?</span>
-        <h2>Un patrimoine mondial <span class="accent-text">menacé</span>, une mobilisation nécessaire</h2>
-        <div class="divider"></div>
-        <p>Saint-Louis, classée au patrimoine mondial de l'UNESCO, incarne l'histoire et la richesse culturelle de l'Afrique de l'Ouest. Fondée en 1659, cette ancienne capitale, surnommée la <strong>"Région du Fleuve"</strong>, doit son développement à sa position stratégique sur le fleuve Sénégal.</p>
-        <p>Cependant, les berges, autrefois lieux de vie et de célébration, sont aujourd'hui jonchées de déchets. <strong>The Flow Sénégal ambitionne de changer cette réalité</strong> et de rendre au fleuve son rôle central dans la vie économique, sociale et écologique de la région.</p>
-        <div class="stats-highlight">
-          <div class="highlight-stat"><span class="highlight-number">1659</span><span class="highlight-label">Année de fondation</span></div>
-          <div class="highlight-stat"><span class="highlight-number">UNESCO</span><span class="highlight-label">Patrimoine mondial</span></div>
-        </div>
-      </div>
-      <div class="why-saintlouis-image">
-        <img src="images/pont.webp" alt="Pont Faidherbe à Saint-Louis">
-        <div class="image-caption">Le pont Faidherbe, emblème de Saint-Louis</div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2026 The Flow Sénégal. Tous droits réservés.</p>
+        <p>Ensemble, redonnons vie au fleuve.</p>
       </div>
     </div>
-  </div>
-</section>
+  </footer>
 
-<!-- ========== LE DÉBUT D'UNE HISTOIRE ENTRE LES FLEUVES ========== -->
-<section class="fleuve-connection">
-  <div class="container">
-    <div class="connection-content">
-      <div class="connection-icon">
-        <i class="fas fa-handshake"></i>
-        <i class="fas fa-water"></i>
-      </div>
-      <h2>Le début d'une histoire entre les fleuves</h2>
-      <div class="connection-separator"></div>
-      <p>Saint-Louis a montré la voie : The Flow peut naître partout où un fleuve inspire.</p>
-      <p class="connection-quote">De la Seine au Sénégal, c'est le même souffle — celui d'un monde plus fluide, plus solidaire, plus vivant.</p>
-      <div class="connection-flags">
-        <span><i class="fas fa-map-marker-alt"></i> Seine, France</span>
-        <span><i class="fas fa-long-arrow-alt-right"></i></span>
-        <span><i class="fas fa-map-marker-alt"></i> Sénégal, Saint-Louis</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ========== MISSION ET VISION ========== -->
-<section class="mission-values">
-  <div class="container">
-    <div class="mission-grid">
-      <div class="mission-box">
-        <i class="fas fa-bullseye"></i>
-        <h3>🎯 Notre mission</h3>
-        <p>Mobiliser les citoyens, restaurer les berges et reconnecter les jeunes au fleuve Sénégal pour un environnement plus sain et durable.</p>
-      </div>
-      <div class="mission-box">
-        <i class="fas fa-eye"></i>
-        <h3>👁️ Notre vision</h3>
-        <p>Un Saint-Louis où chaque enfant grandit en regardant le fleuve comme un ami à protéger.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ========== NOS 4 AXES D'ACTION ========== -->
-<section class="values-section">
-  <div class="container">
-    <h2 class="section-title">💎 Nos axes d'action</h2>
-    <div class="section-separator"></div>
-    <div class="values-grid">
-      <div class="value-card"><i class="fas fa-chalkboard-user"></i><h3>Sensibiliser</h3><p>Éduquer les populations à l'écologie et à la gestion durable des berges</p></div>
-      <div class="value-card"><i class="fas fa-trash-alt"></i><h3>Restaurer</h3><p>Nettoyer les berges et reforester les abords du fleuve</p></div>
-      <div class="value-card"><i class="fas fa-child"></i><h3>Reconnecter</h3><p>Offrir des espaces d'épanouissement pour reconnecter les jeunes au fleuve</p></div>
-      <div class="value-card"><i class="fas fa-shield-alt"></i><h3>Protéger</h3><p>Promouvoir des pratiques respectueuses pour protéger l'écosystème</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- ========== NOTRE ÉQUIPE ========== -->
-<section class="team-section">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-tag">Notre bureau</span>
-      <h2>Ceux qui font <span class="accent-text">le mouvement</span></h2>
-      <div class="divider"></div>
-    </div>
-    <div class="team-grid">
-      <div class="team-card"><div class="team-image"><img src="images/papembaye.webp" alt="Pape Mbaye"></div><h3>Pape Mbaye</h3><p class="team-role">Président</p><p class="team-bio">Fondateur du mouvement, riverain passionné qui porte la vision d'un fleuve retrouvé.</p></div>
-      <div class="team-card"><div class="team-image"><img src="images/omarmbaye.webp" alt="Oumar Mbaye"></div><h3>Oumar Mbaye</h3><p class="team-role">Secrétaire général</p><p class="team-bio">Responsable des relations institutionnelles et des partenariats.</p></div>
-      <div class="team-card"><div class="team-image"><img src="images/mokhtar.jpeg" alt="Mokhtar Coulibaly"></div><h3>Mokhtar Coulibaly</h3><p class="team-role">Président Cellule Communication</p><p class="team-bio">Gère la communication et coordonne les actions médiatiques de l'association.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- ========== PARTENAIRES ========== -->
-<section class="partners-data">
-  <div class="container">
-    <h2 class="section-title">⭐ Ils nous font confiance</h2>
-    <div class="section-separator"></div>
-    <div class="partners-logos-grid">
-      <div class="partner-logo-item"><i class="fas fa-ship"></i><span>Fédération Canoë-Kayak</span></div>
-      <div class="partner-logo-item"><i class="fas fa-person-hiking"></i><span>Randonneurs de Saint-Louis</span></div>
-      <div class="partner-logo-item"><i class="fas fa-school"></i><span>Écoles de Diamaguène</span></div>
-      <div class="partner-logo-item"><i class="fas fa-building"></i><span>Mairie de Saint-Louis</span></div>
-      <div class="partner-logo-item"><i class="fas fa-hand-sparkles"></i><span>The Flow International</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- ========== CITATION & CTA ========== -->
-<section class="cta-section">
-  <div class="container">
-    <h2>“Notre rêve, c'est que chaque enfant de Saint-Louis grandisse en regardant le fleuve comme un ami à protéger.”</h2>
-    <p>— Pape Mbaye, président de The Flow Sénégal</p>
-    <div class="btn-group-cta">
-      <a href="contact.html" class="btn-primary">Rejoindre le mouvement <i class="fas fa-arrow-right"></i></a>
-      <a href="galerie.html" class="btn-outline-light">📸 Voir la galerie <i class="fas fa-images"></i></a>
-    </div>
-  </div>
-</section>
-
-<!-- ========== FOOTER ========== -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-col"><div class="footer-logo">THE FLOW <span>Sénégal</span></div><p>Association citoyenne pour la protection du fleuve Sénégal.</p><div class="social-links"><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></div></div>
-      <div class="footer-col"><h4>Navigation</h4><ul><li><a href="index.html">Accueil</a></li><li><a href="apropos.html">À propos</a></li><li><a href="programme.html">Programme</a></li><li><a href="galerie.html">Galerie</a></li><li><a href="partenaires.html">Partenaires</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-      <div class="footer-col"><h4>Nous trouver</h4><ul><li><i class="fas fa-map-marker-alt"></i> Diamaguène, près du dispensaire Sor</li><li><i class="fas fa-city"></i> Saint-Louis, Sénégal</li><li><i class="fas fa-envelope"></i> <a href="mailto:contact@theflowsenegal.org">contact@theflowsenegal.org</a></li></ul></div>
-      <div class="footer-col"><h4>Rejoignez-nous</h4><p>Soutenez l'initiative, devenez bénévole.</p><a href="contact.html" class="btn-small">Nous contacter</a></div>
-    </div>
-    <div class="footer-bottom"><p>&copy; 2026 The Flow Sénégal — Ensemble, redonnons vie au fleuve.</p></div>
-  </div>
-</footer>
-
-<script>
-  // ========== MOBILE MENU ==========
-  const mobileToggle = document.getElementById('mobileToggle');
-  const navMenu = document.getElementById('navMenu');
-  if (mobileToggle) {
-    mobileToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('active');
-    });
-  }
-
-  // ========== HEADER SCROLL ==========
-  window.addEventListener('scroll', () => {
-    const header = document.querySelector('.header');
-    if (window.scrollY > 50) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
-    }
-  });
-
-  // ========== ANIMATIONS ==========
-  const animatedElements = document.querySelectorAll('.deep-stat-item, .value-card, .team-card, .partner-logo-item');
-  
-  const checkVisibility = () => {
-    animatedElements.forEach(el => {
-      const rect = el.getBoundingClientRect();
-      if (rect.top < window.innerHeight - 80) {
-        el.style.opacity = '1';
-        el.style.transform = 'translateY(0)';
-      }
-    });
-  };
-
-  animatedElements.forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(30px)';
-    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-  });
-
-  window.addEventListener('scroll', checkVisibility);
-  checkVisibility();
-</script>
+  <script src="JS/main.js"></script>
 </body>
 </html>

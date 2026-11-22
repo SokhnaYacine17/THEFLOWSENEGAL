@@ -2,202 +2,427 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="description" content="The Flow Sénégal - Mouvement citoyen pour la protection du fleuve Sénégal à Saint-Louis. Nettoyage, sensibilisation, et reconnexion des jeunes à leur patrimoine naturel.">
-  <title>The Flow Sénégal | Mouvement pour le fleuve</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="The Flow Sénégal, association citoyenne présidée par Pape Mbaye, agit à Saint-Louis pour protéger le fleuve Sénégal, ses berges et son environnement immédiat.">
+
+  <meta name="theme-color" content="#14532d">
+  <meta name="author" content="The Flow Sénégal">
+
+  <title>The Flow Sénégal | Le fleuve et son environnement</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="preload" as="image" href="images/hero.png">
   <link rel="stylesheet" href="CSS/style.css">
 </head>
+
 <body>
+
+  <!-- EN-TÊTE -->
   <header class="site-header">
     <div class="container header-container">
-      <div class="logo">
-        <a href="index.html" aria-label="The Flow Sénégal - Retour à l'accueil">
-          <img src="images/logoTFS.jpeg" alt="Logo de The Flow Sénégal" class="logo-image">
-          <span class="logo-text">THE FLOW<span class="accent"> Sénégal</span></span>
-        </a>
-      </div>
-      <nav class="main-nav" aria-label="Navigation principale">
+
+      <a href="index.html" class="logo" aria-label="The Flow Sénégal, accueil">
+        <img src="images/logoTFS.jpeg" alt="Logo The Flow Sénégal" class="logo-image" width="53" height="53">
+        <span class="logo-text">
+          THE FLOW <span class="accent">Sénégal</span>
+        </span>
+      </a>
+
+      <button class="mobile-toggle" type="button"
+        aria-label="Ouvrir le menu" aria-expanded="false"
+        aria-controls="mainNavigation">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+      </button>
+
+      <nav class="main-nav" id="mainNavigation" aria-label="Navigation principale">
         <ul class="nav-list">
-          <li><a href="index.html" class="nav-link active" aria-label="Page d'accueil">Accueil</a></li>
-          <li><a href="apropos.html" class="nav-link" aria-label="À propos de The Flow Sénégal">À propos</a></li>
-          <li><a href="programme.html" class="nav-link" aria-label="Programme des événements">Programme</a></li>
-          <li><a href="galerie.html" class="nav-link" aria-label="Galerie photos">Galerie</a></li>
-          <li><a href="partenaires.html" class="nav-link" aria-label="Nos partenaires">Partenaires</a></li>
-          <li><a href="contact.html" class="nav-link" aria-label="Nous contacter">Contact</a></li>
+          <li><a href="index.html" class="nav-link active" aria-current="page">Accueil</a></li>
+          <li><a href="apropos.html" class="nav-link">À propos</a></li>
+          <li><a href="programme.html" class="nav-link">Programme</a></li>
+          <li><a href="galerie.html" class="nav-link">Galerie</a></li>
+          <li><a href="partenaires.html" class="nav-link">Partenaires</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
-        <button type="button" class="mobile-toggle" aria-label="Menu" aria-expanded="false">
-          <i class="fas fa-bars" aria-hidden="true"></i>
-        </button>
       </nav>
+
     </div>
   </header>
 
   <main>
-    <!-- Hero Section -->
+
+    <!-- BANNIÈRE PRINCIPALE -->
     <section class="hero">
       <div class="hero-overlay"></div>
+
       <div class="container hero-content">
-        <span class="hero-badge">Saint-Louis · Mai 2025</span>
-        <h1 class="hero-title">Le fleuve Sénégal comme <span class="highlight">point de départ</span> d'un mouvement</h1>
-        <p class="hero-subtitle">Une alliance entre nature, culture et jeunesse, ancrée au cœur du delta. The Flow Sénégal réunit habitants, sportifs et associations pour prendre soin du fleuve et célébrer la vie qu'il relie.</p>
-        <div class="hero-stats">
-          <div class="stat"><span class="stat-number">300+</span> <span class="stat-label">mobilisés</span></div>
-          <div class="stat"><span class="stat-number">2</span> <span class="stat-label">jours d'action</span></div>
-          <div class="stat"><span class="stat-number">15+</span> <span class="stat-label">partenaires</span></div>
-        </div>
+
+        <span class="hero-badge">
+          <i class="fas fa-location-dot" aria-hidden="true"></i>
+          Saint-Louis, Sénégal
+        </span>
+
+        <p class="hero-eyebrow">THE FLOW SÉNÉGAL · ASSOCIATION CITOYENNE</p>
+
+        <h1 class="hero-title">
+          Le fleuve Sénégal,
+          <span class="highlight">notre patrimoine à préserver</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          The Flow Sénégal rassemble les citoyens autour d'une ambition commune :
+          protéger le fleuve Sénégal et son environnement immédiat, notamment
+          ses berges, ses espaces naturels et les lieux de vie des communautés
+          riveraines. Ensemble, agissons pour un cadre de vie plus propre,
+          plus sain et plus durable.
+        </p>
+
         <div class="hero-buttons">
-          <a href="contact.html" class="btn btn-primary">Rejoindre le mouvement <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
-          <a href="programme.html" class="btn btn-outline">Découvrir l'événement</a>
+          <a href="contact.html" class="btn btn-primary">
+            Rejoindre le mouvement
+            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          </a>
+
+          <a href="apropos.html" class="btn btn-outline">
+            Découvrir notre mission
+          </a>
         </div>
+
+        <div class="hero-signature">
+          <span class="signature-line"></span>
+          <span>Agir aujourd'hui pour préserver demain.</span>
+        </div>
+
       </div>
+
       <div class="hero-wave" aria-hidden="true">
-        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="wave-fill"></path>
+        <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
+          <path d="M0,35 C180,90 320,5 500,35 S830,90 1000,35 S1150,15 1200,35 L1200,100 L0,100 Z"></path>
         </svg>
       </div>
     </section>
 
-    <!-- Citation Mission -->
-    <section class="mission-flash">
-      <div class="container">
-        <div class="flash-card">
-          <i class="fas fa-quote-left" aria-hidden="true"></i>
-          <p>“Notre rêve, c'est que chaque enfant de Saint-Louis grandisse en regardant le fleuve comme un ami à protéger.”</p>
-          <span>— Pape Mbaye, président de The Flow Sénégal</span>
-        </div>
-      </div>
-    </section>
+    <!-- PRÉSENTATION DE L'ASSOCIATION -->
+    <section class="mission-section">
+      <div class="container mission-grid">
 
-    <!-- Pourquoi Saint-Louis -->
-    <section class="section why-section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Pourquoi Saint-Louis ?</span>
-          <h2>Un patrimoine mondial <span class="accent-text">menacé</span>, une mobilisation nécessaire</h2>
+        <div class="mission-heading">
+          <span class="section-tag">Qui sommes-nous ?</span>
+          <h2>Une communauté mobilisée pour <span class="accent-text">le fleuve</span></h2>
           <div class="divider"></div>
         </div>
-        <div class="why-grid">
-          <div class="why-text">
-            <p>Classée au patrimoine mondial de l'UNESCO, Saint-Louis incarne l'histoire et la richesse culturelle de l'Afrique de l'Ouest. Surnommée la <strong>“Région du Fleuve”</strong>, son développement est lié au fleuve Sénégal.</p>
-            <p>Cependant, les berges, autrefois lieux de vie et de célébration, sont aujourd'hui jonchées de déchets. <strong>The Flow Sénégal ambitionne de changer cette réalité</strong> et de rendre au fleuve son rôle central dans la vie économique, sociale et écologique.</p>
-            <a href="apropos.html" class="btn-link">Découvrir notre mission <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
-          </div>
-          <div class="why-image">
-            <!-- CORRECTION : chemin avec slashes normaux -->
-            <img src="images/paddels.jpeg" alt="Vue du fleuve Sénégal à Saint-Louis avec des pirogues traditionnelles">
-            <div class="image-caption">Le fleuve, artère vitale de Saint-Louis</div>
-          </div>
+
+        <div class="mission-copy">
+          <p>
+            <strong>The Flow Sénégal</strong> est une association citoyenne
+            engagée dans la protection du fleuve Sénégal et de son
+            environnement immédiat à Saint-Louis.
+          </p>
+
+          <p>
+            À travers des initiatives de nettoyage, de sensibilisation,
+            de sport et de mobilisation collective, l'association encourage
+            les habitants, les jeunes, les bénévoles et les partenaires
+            à prendre soin du fleuve et de ses alentours.
+          </p>
+
+          <a href="apropos.html" class="text-link">
+            En savoir plus sur l'association
+            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          </a>
         </div>
+
       </div>
     </section>
 
-    <!-- Chiffres clés -->
-    <section class="stats-section">
+    <!-- CITATION DU PRÉSIDENT -->
+    <section class="president-section">
       <div class="container">
-        <div class="stats-grid">
-          <div class="stat-item">
-            <i class="fas fa-trash-alt" aria-hidden="true"></i>
-            <div class="stat-number">1.2T</div>
-            <div class="stat-desc">déchets collectés en 2025</div>
-          </div>
-          <div class="stat-item">
-            <i class="fas fa-child" aria-hidden="true"></i>
-            <div class="stat-number">200+</div>
-            <div class="stat-desc">enfants sensibilisés</div>
-          </div>
-          <div class="stat-item">
-            <i class="fas fa-handshake" aria-hidden="true"></i>
-            <div class="stat-number">12</div>
-            <div class="stat-desc">associations partenaires</div>
-          </div>
-          <div class="stat-item">
-            <i class="fas fa-tree" aria-hidden="true"></i>
-            <div class="stat-number">500</div>
-            <div class="stat-desc">arbres plantés d'ici 2026</div>
+        <div class="president-card">
+          <img src="images/papembaye.webp" alt="Pape Mbaye, président de The Flow Sénégal"
+               class="president-photo" width="347" height="347" loading="lazy">
+
+          <div class="president-body">
+            <div class="quote-icon">
+              <i class="fas fa-quote-left" aria-hidden="true"></i>
+            </div>
+
+            <blockquote>
+              « Notre engagement est de protéger le fleuve Sénégal,
+              de préserver ses berges et son environnement immédiat,
+              et de transmettre aux générations futures le respect
+              de ce patrimoine naturel commun. »
+            </blockquote>
+
+            <p class="president-name">Pape Mbaye</p>
+            <p class="president-role">Président de l'association The Flow Sénégal</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Actions marquantes -->
+    <!-- NOTRE ENVIRONNEMENT -->
+    <section class="section environment-section">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag">Notre territoire, notre responsabilité</span>
+          <h2>Préserver le fleuve et <span class="accent-text">ses alentours</span></h2>
+          <div class="divider"></div>
+          <p>
+            La protection du fleuve passe aussi par celle des espaces
+            naturels et des lieux de vie qui l'entourent.
+          </p>
+        </div>
+
+        <div class="environment-grid">
+
+          <div class="environment-image">
+            <img
+              src="images/WhatsApp%20Image%202026-09-25%20at%2017.15.31%20%283%29.jpeg"
+              alt="Bénévoles de The Flow Sénégal rassemblés autour des sacs de déchets collectés sur les berges"
+              width="1280" height="960"
+              loading="lazy"
+            >
+            <div class="image-label">
+              <i class="fas fa-water" aria-hidden="true"></i>
+              Des berges nettoyées, ensemble
+            </div>
+          </div>
+
+          <div class="environment-content">
+            <span class="section-tag">Pourquoi agir ?</span>
+
+            <h3>Le fleuve est au cœur de la vie locale</h3>
+
+            <p>
+              Le fleuve Sénégal fait partie du paysage, de l'histoire
+              et de la vie quotidienne des communautés riveraines.
+              Sa préservation concerne aussi les berges, les espaces
+              naturels et les zones fréquentées par les habitants.
+            </p>
+
+            <p>
+              Les déchets et les comportements nuisibles à l'environnement
+              peuvent dégrader ces espaces. Une mobilisation collective
+              contribue à encourager des pratiques plus responsables
+              et à préserver la qualité du cadre de vie.
+            </p>
+
+            <ul class="check-list">
+              <li><i class="fas fa-circle-check" aria-hidden="true"></i> Protéger les berges et les espaces naturels</li>
+              <li><i class="fas fa-circle-check" aria-hidden="true"></i> Réduire les déchets dans les lieux de vie</li>
+              <li><i class="fas fa-circle-check" aria-hidden="true"></i> Sensibiliser les jeunes et les riverains</li>
+              <li><i class="fas fa-circle-check" aria-hidden="true"></i> Encourager les initiatives citoyennes</li>
+            </ul>
+
+            <a href="apropos.html" class="btn btn-primary">
+              Notre engagement
+              <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- NOS ACTIONS -->
     <section class="section actions-section">
       <div class="container">
+
         <div class="section-header">
-          <span class="section-tag">Temps forts</span>
-          <h2>Deux jours d'action et de partage</h2>
+          <span class="section-tag">Passer à l'action</span>
+          <h2>Nos actions pour <span class="accent-text">un environnement durable</span></h2>
           <div class="divider"></div>
+          <p>
+            Des initiatives qui rapprochent les citoyens de leur fleuve
+            et encouragent la responsabilité environnementale.
+          </p>
         </div>
+
         <div class="actions-grid">
-          <div class="action-card">
-            <div class="action-icon"><i class="fas fa-water" aria-hidden="true"></i></div>
-            <h3>Initiation paddle</h3>
-            <p>Découverte du fleuve sous un angle ludique pour les enfants du quartier de Diamaguène.</p>
+
+          <article class="action-card">
+            <div class="action-media">
+              <img src="images/WhatsApp%20Image%202026-09-25%20at%2017.15.31%20%2828%29.jpeg" alt="Bénévoles en train de nettoyer les berges du fleuve" loading="lazy" width="800" height="600">
+              <div class="action-icon"><i class="fas fa-broom" aria-hidden="true"></i></div>
+            </div>
+            <div class="action-body">
+            <h3>Nettoyage des berges</h3>
+            <p>
+              Mobiliser les habitants et les bénévoles pour contribuer
+              à la propreté des berges et des espaces riverains.
+            </p>
+            <a href="programme.html" class="card-link">Nos initiatives <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
           </div>
-          <div class="action-card">
-            <div class="action-icon"><i class="fas fa-broom" aria-hidden="true"></i></div>
-            <h3>Grand clean-up</h3>
-            <p>Mobilisation citoyenne pour nettoyer les berges avec habitants et associations locales.</p>
+          </article>
+
+          <article class="action-card">
+            <div class="action-media">
+              <img src="images/initiation.jpeg" alt="Initiation de jeunes sur les berges du fleuve" loading="lazy" width="800" height="600">
+              <div class="action-icon"><i class="fas fa-seedling" aria-hidden="true"></i></div>
+            </div>
+            <div class="action-body">
+            <h3>Sensibilisation écologique</h3>
+            <p>
+              Encourager les gestes responsables et faire connaître
+              les enjeux de la protection du fleuve et de ses alentours.
+            </p>
+            <a href="programme.html" class="card-link">Nos initiatives <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
           </div>
-          <div class="action-card">
-            <div class="action-icon"><i class="fas fa-paintbrush" aria-hidden="true"></i></div>
-            <h3>Fresques collectives</h3>
-            <p>Mise en valeur des quais par des animations et décorations artistiques.</p>
+          </article>
+
+          <article class="action-card">
+            <div class="action-media">
+              <img src="images/flowban.webp" alt="Pagayeurs en paddle sur le fleuve Sénégal à Saint-Louis" loading="lazy" width="800" height="600">
+              <div class="action-icon"><i class="fas fa-water" aria-hidden="true"></i></div>
+            </div>
+            <div class="action-body">
+            <h3>Découverte du fleuve</h3>
+            <p>
+              Favoriser la découverte du fleuve à travers des activités
+              éducatives, sportives et nautiques adaptées.
+            </p>
+            <a href="programme.html" class="card-link">Nos initiatives <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
           </div>
-          <div class="action-card">
-            <div class="action-icon"><i class="fas fa-futbol" aria-hidden="true"></i></div>
-            <h3>Match de gala</h3>
-            <p>Football et fraternité entre jeunes du quartier et bénévoles de The Flow Sénégal.</p>
+          </article>
+
+          <article class="action-card">
+            <div class="action-media">
+              <img src="images/WhatsApp%20Image%202026-10-07%20at%2021.05.32%20%281%29.jpeg" alt="Jeunes et riverains réunis devant le pont Faidherbe" loading="lazy" width="800" height="600">
+              <div class="action-icon"><i class="fas fa-people-group" aria-hidden="true"></i></div>
+            </div>
+            <div class="action-body">
+            <h3>Mobilisation citoyenne</h3>
+            <p>
+              Réunir les jeunes, les riverains, les associations
+              et les partenaires autour d'objectifs communs.
+            </p>
+            <a href="partenaires.html" class="card-link">Participer <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
           </div>
-          <div class="action-card">
-            <div class="action-icon"><i class="fas fa-ship" aria-hidden="true"></i></div>
-            <h3>Parade nautique</h3>
-            <p>Paddlers, kayakistes et la Fédération Sénégalaise de Canoë-Kayak sur le fleuve.</p>
+          </article>
+
+          <article class="action-card">
+            <div class="action-media">
+              <img src="images/saintlouis.jpg" alt="Pirogues colorées sur le fleuve à Saint-Louis" loading="lazy" width="800" height="600">
+              <div class="action-icon"><i class="fas fa-palette" aria-hidden="true"></i></div>
+            </div>
+            <div class="action-body">
+            <h3>Culture et créativité</h3>
+            <p>
+              Valoriser le patrimoine local grâce à des initiatives
+              culturelles et artistiques porteuses de sens.
+            </p>
+            <a href="galerie.html" class="card-link">Voir la galerie <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
           </div>
-          <div class="action-card">
-            <div class="action-icon"><i class="fas fa-chalkboard-user" aria-hidden="true"></i></div>
-            <h3>Sensibilisation</h3>
-            <p>Rencontres avec commerçants, élus et médias pour une collaboration durable.</p>
+          </article>
+
+          <article class="action-card">
+            <div class="action-media">
+              <img src="images/WhatsApp%20Image%202026-10-07%20at%2021.05.35%20%283%29.jpeg" alt="Pagayeur en paddle sur le fleuve" loading="lazy" width="800" height="600">
+              <div class="action-icon"><i class="fas fa-futbol" aria-hidden="true"></i></div>
+            </div>
+            <div class="action-body">
+            <h3>Sport et jeunesse</h3>
+            <p>
+              Faire du sport un moyen de créer du lien, de mobiliser
+              les jeunes et de transmettre des valeurs citoyennes.
+            </p>
+            <a href="programme.html" class="card-link">Découvrir le programme <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
           </div>
+          </article>
+
         </div>
-        <div class="text-center">
-          <a href="programme.html" class="btn btn-secondary">Voir le programme détaillé</a>
+
+        <div class="section-action">
+          <a href="programme.html" class="btn btn-primary">
+            Découvrir tous nos programmes
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EN IMAGES -->
+    <section class="section gallery-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Sur le terrain</span>
+          <h2>The Flow Sénégal <span class="accent-text">en images</span></h2>
+          <div class="divider"></div>
+          <p>Nettoyages, sorties en paddle, jeunes du quartier : quelques moments forts de nos actions à Saint-Louis.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <a href="galerie.html" class="gallery-item"><img src="images/WhatsApp%20Image%202026-09-25%20at%2017.15.31%20%2832%29.jpeg" alt="Bénévoles nettoyant les berges du fleuve" loading="lazy" width="900" height="675"></a>
+          <a href="galerie.html" class="gallery-item"><img src="images/WhatsApp%20Image%202026-10-07%20at%2021.05.32%20%287%29.jpeg" alt="Deux pagayeurs dans la mangrove" loading="lazy" width="900" height="918"></a>
+          <a href="galerie.html" class="gallery-item"><img src="images/WhatsApp%20Image%202026-10-07%20at%2021.05.33%20%287%29.jpeg" alt="Plage de pêcheurs et palmiers à Saint-Louis" loading="lazy" width="900" height="1061"></a>
+          <a href="galerie.html" class="gallery-item"><img src="images/WhatsApp%20Image%202026-10-07%20at%2021.05.34%20%287%29.jpeg" alt="Équipe de nettoyage au bord du fleuve, pont Faidherbe en fond" loading="lazy" width="900" height="1038"></a>
+          <a href="galerie.html" class="gallery-item"><img src="images/WhatsApp%20Image%202026-10-07%20at%2021.05.35%20%282%29.jpeg" alt="Pirogue et monument à Saint-Louis" loading="lazy" width="900" height="1133"></a>
+          <a href="galerie.html" class="gallery-item"><img src="images/WhatsApp%20Image%202026-10-07%20at%2021.05.36%20%284%29.jpeg" alt="Pagayeurs et bannière The Flow devant le pont Faidherbe" loading="lazy" width="900" height="668"></a>
+        </div>
+
+        <div class="section-action">
+          <a href="galerie.html" class="btn btn-primary">Voir toute la galerie <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
         </div>
       </div>
     </section>
 
-    <!-- Newsletter / CTA -->
-    <section class="cta-section">
-      <div class="container cta-container">
-        <div class="cta-content">
-          <h2>Rejoignez le mouvement</h2>
-          <p>The Flow Sénégal, ce n'est pas seulement un événement, c'est un mouvement pour un avenir plus respectueux de l'environnement. Ensemble, redonnons au fleuve Sénégal sa beauté.</p>
-          <form class="cta-form" id="newsletterForm">
-            <label for="newsletter-email" class="visually-hidden">Adresse email</label>
-            <input type="email" id="newsletter-email" placeholder="Votre email" required>
-            <button type="submit" class="btn btn-primary">Je m'engage <i class="fas fa-heart" aria-hidden="true"></i></button>
-          </form>
-          <p class="cta-small">Ou contactez-nous directement : <a href="mailto:contact@theflowsenegal.org">contact@theflowsenegal.org</a></p>
-        </div>
+    <!-- ENGAGEMENT -->
+    <section class="commitment-section">
+      <div class="commitment-overlay"></div>
+      <div class="container commitment-content">
+
+        <span class="section-tag">Chaque geste compte</span>
+
+        <h2>Le fleuve nous unit.<br><span>Sa préservation nous rassemble.</span></h2>
+
+        <p>
+          Vous êtes riverain, étudiant, bénévole, association ou partenaire ?
+          Rejoignez The Flow Sénégal et contribuez à des actions en faveur
+          du fleuve et de son environnement immédiat.
+        </p>
+
+        <a href="contact.html" class="btn btn-light">
+          Nous contacter
+          <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        </a>
+
       </div>
     </section>
+
   </main>
 
-  <!-- ========== FOOTER ========== -->
+  <!-- PIED DE PAGE -->
   <footer class="site-footer">
     <div class="container footer-container">
-      <div class="footer-col">
-        <div class="logo-footer">THE FLOW <span>Sénégal</span></div>
-        <p>Association citoyenne pour la protection du fleuve Sénégal et l'amélioration du cadre de vie.</p>
+
+      <div class="footer-col footer-about">
+        <a href="index.html" class="footer-brand">
+          <img src="images/logoTFS.jpeg" alt="" class="footer-logo" width="47" height="47" loading="lazy">
+          <span>THE FLOW <strong>Sénégal</strong></span>
+        </a>
+
+        <p>
+          Association citoyenne engagée pour la protection du fleuve Sénégal,
+          de ses berges et de son environnement immédiat.
+        </p>
+
         <div class="social-links">
+          <!-- Remplacer les # par les liens officiels des réseaux sociaux -->
           <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
           <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-          <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
         </div>
       </div>
+
       <div class="footer-col">
-        <h4>Navigation</h4>
+        <h3>Navigation</h3>
         <ul>
           <li><a href="index.html">Accueil</a></li>
           <li><a href="apropos.html">À propos</a></li>
@@ -207,22 +432,43 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
+
       <div class="footer-col">
-        <h4>Nous trouver</h4>
-        <ul>
-          <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Diamaguène, près du dispensaire Sor</li>
-          <li><i class="fas fa-city" aria-hidden="true"></i> Saint-Louis, Sénégal</li>
-          <li><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:contact@theflowsenegal.org">contact@theflowsenegal.org</a></li>
+        <h3>Nous trouver</h3>
+        <ul class="contact-list">
+          <li>
+            <i class="fas fa-location-dot" aria-hidden="true"></i>
+            <span>Diamaguène, près du dispensaire Sor, Saint-Louis, Sénégal</span>
+          </li>
+          <li>
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            <a href="mailto:contact@theflowsenegal.org">contact@theflowsenegal.org</a>
+          </li>
+          <li>
+            <i class="fas fa-globe" aria-hidden="true"></i>
+            <a href="https://theflowsenegal.onrender.com/" target="_blank" rel="noopener noreferrer">
+              Notre site internet
+            </a>
+          </li>
         </ul>
       </div>
-      <div class="footer-col">
-        <h4>Rejoignez-nous</h4>
-        <p>Soutenez l'initiative, devenez bénévole.</p>
-        <a href="contact.html" class="btn-small">Nous contacter</a>
+
+      <div class="footer-col footer-join">
+        <h3>Agissons ensemble</h3>
+        <p>
+          La préservation du fleuve et de son environnement commence
+          par l'engagement de chacun.
+        </p>
+        <a href="contact.html" class="btn btn-primary">Rejoindre l'association</a>
       </div>
+
     </div>
+
     <div class="footer-bottom">
-      <p>&copy; 2026 The Flow Sénégal — Ensemble, redonnons vie au fleuve.</p>
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2026 The Flow Sénégal. Tous droits réservés.</p>
+        <p>Ensemble, redonnons vie au fleuve.</p>
+      </div>
     </div>
   </footer>
 

@@ -1,565 +1,1623 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="description" content="The Flow Sénégal - Programme des actions de protection du fleuve Sénégal à Saint-Louis. Découvrez nos événements, nettoyages, animations et ateliers.">
-  <title>The Flow Sénégal | Programme - Nos actions</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Découvrez les programmes et les actions de The Flow Sénégal à Saint-Louis : nettoyage des berges, sensibilisation environnementale, activités nautiques et mobilisation citoyenne.">
+
+  <meta name="theme-color" content="#14532d">
+  <meta name="author" content="The Flow Sénégal">
+
+  <title>The Flow Sénégal | Programme et actions</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="CSS/style.css">
 
   <style>
-    /* Styles spécifiques à la page Programme */
-    .programme-header {
-      background: linear-gradient(135deg, #0D2B28 0%, #1A4A42 100%);
-      padding: 160px 0 80px;
-      text-align: center;
-      color: white;
-      position: relative;
+    /* =========================================
+       PROGRAMME - THE FLOW SÉNÉGAL
+       Identité visuelle de la page d'accueil
+    ========================================= */
+
+    .programme-page {
       overflow: hidden;
     }
 
-    .programme-header::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: url('https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=1920&h=600&fit=crop') center/cover no-repeat;
-      opacity: 0.25;
-      mix-blend-mode: overlay;
+    .programme-page img {
+      display: block;
+      max-width: 100%;
     }
 
-    .programme-header h1 {
-      font-size: 3.5rem;
-      font-weight: 800;
-      margin-bottom: 1rem;
-      position: relative;
-      z-index: 2;
+    .programme-page .accent-text {
+      color: #d99a35;
     }
 
-    .programme-header .highlight {
-      color: var(--accent);
-    }
-
-    .programme-header p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin: 0 auto;
-      opacity: 0.9;
-      position: relative;
-      z-index: 2;
-    }
-
-    /* Introduction */
-    .intro-section {
-      padding: 80px 0;
-      background: var(--light);
-    }
-
-    .intro-text {
-      max-width: 800px;
-      margin: 0 auto;
+    .programme-page .section-header {
+      max-width: 780px;
+      margin: 0 auto 48px;
       text-align: center;
     }
 
-    .intro-text p {
-      color: var(--gray);
+    .programme-page .section-header p {
+      max-width: 680px;
+      margin: 16px auto 0;
       line-height: 1.8;
-      margin-bottom: 1.5rem;
-      font-size: 1.05rem;
     }
 
-    .intro-quote {
-      font-size: 1.3rem;
-      font-style: italic;
-      color: var(--primary);
-      margin-top: 30px;
+    .programme-page .section-tag {
+      display: inline-block;
+      margin-bottom: 14px;
     }
 
-    /* Timeline des événements */
-    .timeline-section {
-      padding: 80px 0;
-      background: var(--white);
+    /* HERO */
+
+    .programme-hero {
+      min-height: 490px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      background:
+        linear-gradient(90deg, rgba(8, 42, 25, .91), rgba(8, 42, 25, .55)),
+        url("../images/hero.png") center/cover no-repeat;
     }
 
-    .timeline-grid {
+    .programme-hero .hero-content {
+      position: relative;
+      z-index: 2;
+      padding-top: 90px;
+      padding-bottom: 100px;
+    }
+
+    .programme-hero .hero-title {
+      max-width: 850px;
+    }
+
+    .programme-hero .hero-subtitle {
+      max-width: 760px;
+    }
+
+    /* INTRODUCTION */
+
+    .programme-intro {
+      padding: 90px 0;
+      background: #f7faf7;
+    }
+
+    .programme-intro-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 40px;
+      align-items: center;
+      gap: 55px;
     }
 
-    .timeline-day {
-      background: var(--light);
-      border-radius: 24px;
-      padding: 40px;
-      box-shadow: var(--shadow);
-      transition: var(--transition);
+    .programme-intro-copy h2 {
+      margin: 12px 0 22px;
+      font-size: clamp(1.8rem, 3vw, 2.7rem);
+      line-height: 1.2;
+      color: #173d29;
     }
 
-    .timeline-day:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow-hover);
+    .programme-intro-copy p {
+      color: #5d6b61;
+      line-height: 1.85;
+      margin-bottom: 15px;
     }
 
-    .day-title {
-      font-size: 1.8rem;
-      font-weight: 800;
-      color: var(--primary);
-      margin-bottom: 10px;
+    .programme-intro-visual {
+      position: relative;
+      min-height: 390px;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 18px 45px rgba(20, 83, 45, .13);
+    }
+
+    .programme-intro-visual img {
+      width: 100%;
+      height: 390px;
+      object-fit: cover;
+    }
+
+    .programme-image-label {
+      position: absolute;
+      bottom: 18px;
+      left: 18px;
+      right: 18px;
+      padding: 17px 20px;
+      border-radius: 12px;
+      color: #fff;
+      background: rgba(20, 83, 45, .91);
+      font-weight: 700;
+    }
+
+    .programme-image-label i {
+      color: #f4b34d;
+      margin-right: 8px;
+    }
+
+    /* TITRES DES SECTIONS */
+
+    .programme-section {
+      padding: 85px 0;
+    }
+
+    .programme-section-light {
+      background: #f7faf7;
+    }
+
+    .programme-section-white {
+      background: #fff;
+    }
+
+    .programme-heading {
+      max-width: 790px;
+      text-align: center;
+      margin: 0 auto 45px;
+    }
+
+    .programme-heading h2 {
+      color: #173d29;
+      font-size: clamp(1.9rem, 3.2vw, 2.7rem);
+      line-height: 1.2;
+      margin: 12px 0;
+    }
+
+    .programme-heading h2 span {
+      color: #d99a35;
+    }
+
+    .programme-heading p {
+      color: #657168;
+      line-height: 1.8;
+      margin-top: 16px;
+    }
+
+    .programme-divider {
+      display: block;
+      width: 65px;
+      height: 4px;
+      border-radius: 5px;
+      background: #d99a35;
+      margin: 18px auto;
+    }
+
+    /* BANDEAU ÉDITION */
+
+    .edition-intro-bar {
       display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 24px 28px;
+      margin-bottom: 32px;
+      border-radius: 14px;
+      background: #edf5ee;
+      border-left: 5px solid #237044;
+    }
+
+    .edition-intro-bar strong {
+      display: block;
+      color: #17482d;
+      font-size: 1.1rem;
+      margin-bottom: 6px;
+    }
+
+    .edition-intro-bar p {
+      color: #66756a;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .edition-label {
+      flex-shrink: 0;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 15px;
+      border-radius: 30px;
+      background: #fff;
+      color: #237044;
+      font-size: .78rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+    }
+
+    /* CARTES DES JOURNÉES */
+
+    .programme-days {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 28px;
+      align-items: start;
+    }
+
+    .programme-day-card {
+      height: 100%;
+      overflow: hidden;
+      background: #fff;
+      border: 1px solid #e8eee9;
+      border-radius: 18px;
+      box-shadow: 0 10px 35px rgba(20, 83, 45, .07);
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+
+    .programme-day-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 18px 40px rgba(20, 83, 45, .12);
+    }
+
+    .programme-day-cover {
+      width: 100%;
+      height: 245px;
+      object-fit: cover;
+    }
+
+    .programme-day-body {
+      padding: 27px;
+    }
+
+    .programme-day-header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 25px;
+    }
+
+    .programme-day-icon {
+      width: 52px;
+      height: 52px;
+      flex-shrink: 0;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      background: #17633c;
+      border-radius: 14px;
+      font-size: 1.2rem;
+    }
+
+    .programme-day-header h3 {
+      color: #173d29;
+      font-size: 1.2rem;
+      margin: 0 0 5px;
+    }
+
+    .programme-day-header p {
+      color: #89948c;
+      font-size: .88rem;
+      margin: 0;
+    }
+
+    .programme-activities {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .programme-activities li {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 17px 0;
+      border-top: 1px solid #edf1ed;
+    }
+
+    .programme-activity-icon {
+      width: 37px;
+      height: 37px;
+      flex-shrink: 0;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      color: #237044;
+      background: #edf6ef;
+    }
+
+    .programme-activities strong {
+      display: block;
+      color: #294936;
+      font-size: .96rem;
+      margin-bottom: 6px;
+    }
+
+    .programme-activities p {
+      color: #77837a;
+      font-size: .88rem;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* GALERIE */
+
+    .programme-gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .programme-gallery-item {
+      position: relative;
+      display: block;
+      height: 280px;
+      overflow: hidden;
+      border-radius: 15px;
+      background: #e8eee9;
+    }
+
+    .programme-gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .45s ease;
+    }
+
+    .programme-gallery-item:hover img {
+      transform: scale(1.07);
+    }
+
+    .programme-gallery-item::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(transparent 60%, rgba(0, 0, 0, .35));
+      pointer-events: none;
+    }
+
+    /* RÉTROSPECTIVE 2026 */
+
+    .programme-2026 {
+      background: #f7faf7;
+    }
+
+    .programme-2026-banner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 35px;
+    }
+
+    .programme-2026-banner .section-tag {
+      margin: 0;
+    }
+
+    .programme-2026-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 16px;
+      border-radius: 30px;
+      color: #17633c;
+      background: #e7f3e9;
+      font-size: .8rem;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .programme-2026-grid {
+      display: grid;
+      grid-template-columns: .95fr 1.05fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .programme-2026-image {
+      position: relative;
+      min-height: 420px;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 15px 40px rgba(20, 83, 45, .12);
+    }
+
+    .programme-2026-image img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+    }
+
+    .programme-2026-image-label {
+      position: absolute;
+      left: 18px;
+      right: 18px;
+      bottom: 18px;
+      padding: 18px;
+      color: #fff;
+      border-radius: 12px;
+      background: rgba(12, 54, 31, .88);
+    }
+
+    .programme-2026-image-label span {
+      display: block;
+      color: #f4bd66;
+      font-size: .82rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .programme-2026-image-label strong {
+      font-size: 1.15rem;
+    }
+
+    .programme-2026-content h3 {
+      color: #173d29;
+      font-size: 1.65rem;
+      line-height: 1.3;
+      margin: 12px 0 18px;
+    }
+
+    .programme-2026-content p {
+      color: #647168;
+      line-height: 1.85;
+      margin-bottom: 15px;
+    }
+
+    .programme-2026-date {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: #237044;
+      font-size: .9rem;
+      font-weight: 800;
+    }
+
+    .programme-objectives {
+      list-style: none;
+      padding: 0;
+      margin: 22px 0;
+    }
+
+    .programme-objectives li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      margin-bottom: 13px;
+      color: #46594b;
+      line-height: 1.6;
+      font-size: .94rem;
+    }
+
+    .programme-objectives i {
+      color: #27804b;
+      margin-top: 4px;
+    }
+
+    .programme-partners {
+      padding: 19px 20px;
+      border-radius: 12px;
+      background: #eaf3ec;
+      border-left: 4px solid #237044;
+    }
+
+    .programme-partners strong {
+      display: block;
+      color: #17482d;
+      margin-bottom: 8px;
+    }
+
+    .programme-partners p {
+      margin: 0;
+      color: #65776a;
+      font-size: .9rem;
+      line-height: 1.7;
+    }
+
+    /* CHIFFRE CLÉ */
+
+    .programme-impact {
+      padding: 75px 0;
+      color: #fff;
+      text-align: center;
+      background:
+        linear-gradient(rgba(13, 67, 38, .94), rgba(13, 67, 38, .94)),
+        url("../images/hero.png") center/cover no-repeat;
+    }
+
+    .programme-impact-icon {
+      font-size: 2.5rem;
+      color: #f4bd66;
+      margin-bottom: 18px;
+    }
+
+    .programme-impact h2 {
+      color: #fff;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      margin: 10px 0 18px;
+    }
+
+    .programme-impact h2 span {
+      color: #f4bd66;
+    }
+
+    .programme-impact p {
+      max-width: 720px;
+      margin: 0 auto;
+      color: rgba(255, 255, 255, .86);
+      line-height: 1.9;
+    }
+
+    /* PERSPECTIVES */
+
+    .programme-projects {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .programme-project-card {
+      padding: 27px 22px;
+      background: #fff;
+      border: 1px solid #e8eee9;
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(20, 83, 45, .05);
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+
+    .programme-project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(20, 83, 45, .1);
+    }
+
+    .programme-project-icon {
+      width: 53px;
+      height: 53px;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      background: #17633c;
+      border-radius: 14px;
+      font-size: 1.25rem;
+      margin-bottom: 20px;
+    }
+
+    .programme-project-card h3 {
+      color: #1d4930;
+      font-size: 1.04rem;
+      line-height: 1.4;
+      margin-bottom: 12px;
+    }
+
+    .programme-project-card p {
+      color: #748077;
+      font-size: .88rem;
+      line-height: 1.75;
+      margin: 0;
+    }
+
+    /* CITATION */
+
+    .programme-quote {
+      max-width: 850px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 45px 35px;
+      border-radius: 18px;
+      background: #f7faf7;
+    }
+
+    .programme-quote-icon {
+      color: #d99a35;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .programme-quote blockquote {
+      color: #234832;
+      font-size: clamp(1.2rem, 2.3vw, 1.7rem);
+      font-weight: 600;
+      line-height: 1.6;
+      margin: 0 0 20px;
+    }
+
+    .programme-quote cite {
+      color: #77847a;
+      font-size: .92rem;
+      font-style: normal;
+    }
+
+    /* APPEL À PARTICIPATION */
+
+    .programme-cta {
+      padding: 85px 0;
+      color: #fff;
+      text-align: center;
+      background:
+        linear-gradient(rgba(13, 67, 38, .93), rgba(13, 67, 38, .93)),
+        url("../images/hero.png") center/cover no-repeat;
+    }
+
+    .programme-cta-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .programme-cta-content > i {
+      color: #f4bd66;
+      font-size: 2.6rem;
+      margin-bottom: 20px;
+    }
+
+    .programme-cta h2 {
+      color: #fff;
+      font-size: clamp(2rem, 3.5vw, 2.8rem);
+      margin-bottom: 18px;
+    }
+
+    .programme-cta p {
+      color: rgba(255, 255, 255, .86);
+      line-height: 1.85;
+      margin-bottom: 28px;
+    }
+
+    .programme-cta .btn {
+      display: inline-flex;
       align-items: center;
       gap: 10px;
     }
 
-    .day-subtitle {
-      color: var(--secondary);
-      font-weight: 600;
-      margin-bottom: 25px;
-      padding-bottom: 15px;
-      border-bottom: 2px solid rgba(0,0,0,0.05);
-    }
+    /* RESPONSIVE */
 
-    .activity-list {
-      list-style: none;
-    }
+    @media (max-width: 1000px) {
+      .programme-projects {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
 
-    .activity-list li {
-      margin-bottom: 20px;
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-      color: var(--gray);
-      line-height: 1.6;
-    }
-
-    .activity-list li i {
-      font-size: 1.3rem;
-      color: var(--secondary);
-      margin-top: 3px;
-      min-width: 25px;
-    }
-
-    .mobilisation-section {
-      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-      padding: 70px 0;
-      color: white;
-      text-align: center;
-    }
-
-    .mobilisation-number {
-      font-size: 4rem;
-      font-weight: 900;
-      color: var(--accent);
-      margin-bottom: 10px;
-    }
-
-    .mobilisation-text {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin: 20px auto 0;
-      opacity: 0.95;
-      line-height: 1.7;
-    }
-
-    .ongoing-projects {
-      padding: 80px 0;
-      background: var(--light);
-    }
-
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 30px;
-      margin-top: 50px;
-    }
-
-    .project-card {
-      background: white;
-      border-radius: 20px;
-      padding: 35px;
-      text-align: center;
-      transition: var(--transition);
-      box-shadow: var(--shadow);
-    }
-
-    .project-card:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow-hover);
-    }
-
-    .project-icon {
-      width: 70px;
-      height: 70px;
-      background: rgba(13, 92, 99, 0.1);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 20px;
-    }
-
-    .project-icon i {
-      font-size: 2rem;
-      color: var(--primary);
-    }
-
-    .project-card h3 {
-      font-size: 1.3rem;
-      margin-bottom: 15px;
-    }
-
-    .project-card p {
-      color: var(--gray);
-      line-height: 1.6;
-    }
-
-    .citation-section {
-      padding: 80px 0;
-      background: var(--white);
-    }
-
-    .citation-card {
-      max-width: 800px;
-      margin: 0 auto;
-      text-align: center;
-      padding: 50px;
-      background: var(--light);
-      border-radius: 24px;
-      box-shadow: var(--shadow);
-    }
-
-    .citation-card i {
-      font-size: 3rem;
-      color: var(--primary);
-      opacity: 0.4;
-      margin-bottom: 20px;
-    }
-
-    .citation-card p {
-      font-size: 1.6rem;
-      font-style: italic;
-      color: var(--dark);
-      margin-bottom: 15px;
-      line-height: 1.4;
-    }
-
-    .citation-card span {
-      color: var(--gray);
-      font-weight: 600;
-    }
-
-    /* Éditions passées */
-    .past-editions {
-      padding: 80px 0;
-      background: var(--light);
-    }
-
-    .editions-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-      margin-top: 50px;
-    }
-
-    .edition-card {
-      background: white;
-      border-radius: 20px;
-      overflow: hidden;
-      transition: var(--transition);
-      box-shadow: var(--shadow);
-    }
-
-    .edition-card:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow-hover);
-    }
-
-    .edition-image {
-      height: 200px;
-      overflow: hidden;
-    }
-
-    .edition-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.3s ease;
-    }
-
-    .edition-card:hover .edition-image img {
-      transform: scale(1.05);
-    }
-
-    .edition-content {
-      padding: 25px;
-    }
-
-    .edition-year {
-      font-size: 1.8rem;
-      font-weight: 800;
-      color: var(--primary);
-      margin-bottom: 10px;
-    }
-
-    .edition-stats {
-      display: flex;
-      gap: 20px;
-      margin: 15px 0;
-      flex-wrap: wrap;
-    }
-
-    .edition-stat {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      font-size: 0.85rem;
-      color: var(--gray);
-    }
-
-    .edition-stat i {
-      color: var(--secondary);
-    }
-
-    @media (max-width: 992px) {
-      .timeline-grid {
-        grid-template-columns: 1fr;
+      .programme-2026-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
       }
     }
 
     @media (max-width: 768px) {
-      .programme-header h1 {
-        font-size: 2.2rem;
+      .programme-hero {
+        min-height: auto;
       }
-      .day-title {
+
+      .programme-hero .hero-content {
+        padding-top: 75px;
+        padding-bottom: 85px;
+      }
+
+      .programme-intro,
+      .programme-section {
+        padding: 65px 0;
+      }
+
+      .programme-intro-grid,
+      .programme-days,
+      .programme-2026-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .programme-intro-grid {
+        gap: 30px;
+      }
+
+      .programme-intro-visual,
+      .programme-intro-visual img {
+        min-height: 300px;
+        height: 300px;
+      }
+
+      .programme-day-cover {
+        height: 220px;
+      }
+
+      .programme-day-body {
+        padding: 22px;
+      }
+
+      .programme-gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .programme-gallery-item {
+        height: 220px;
+      }
+
+      .programme-2026-image,
+      .programme-2026-image img {
+        min-height: 320px;
+        height: 320px;
+      }
+
+      .edition-intro-bar,
+      .programme-2026-banner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .programme-quote {
+        padding: 35px 22px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .programme-projects,
+      .programme-gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .programme-gallery-item {
+        height: 250px;
+      }
+
+      .programme-day-header h3 {
+        font-size: 1.05rem;
+      }
+
+      .programme-2026-content h3 {
         font-size: 1.4rem;
       }
-      .mobilisation-number {
-        font-size: 2.5rem;
-      }
-      .citation-card p {
-        font-size: 1.2rem;
-      }
-      .citation-card {
-        padding: 30px;
+
+      .programme-impact,
+      .programme-cta {
+        padding: 60px 0;
       }
     }
   </style>
 </head>
+
 <body>
+
+  <!-- EN-TÊTE -->
   <header class="site-header">
     <div class="container header-container">
-      <div class="logo">
-        <a href="index.html" aria-label="The Flow Sénégal - Retour à l'accueil">
-          <img src="images/logoTFS.jpeg" alt="Logo de The Flow Sénégal" class="logo-image">
-          <span class="logo-text">THE FLOW<span class="accent"> Sénégal</span></span>
-        </a>
-      </div>
-      <nav class="main-nav" aria-label="Navigation principale">
+
+      <a href="index.html" class="logo" aria-label="The Flow Sénégal, accueil">
+        <img src="images/logoTFS.jpeg" alt="Logo The Flow Sénégal" class="logo-image" width="53" height="53">
+        <span class="logo-text">
+          THE FLOW <span class="accent">Sénégal</span>
+        </span>
+      </a>
+
+      <button class="mobile-toggle" type="button"
+        aria-label="Ouvrir le menu" aria-expanded="false"
+        aria-controls="mainNavigation">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+      </button>
+
+      <nav class="main-nav" id="mainNavigation" aria-label="Navigation principale">
         <ul class="nav-list">
           <li><a href="index.html" class="nav-link">Accueil</a></li>
           <li><a href="apropos.html" class="nav-link">À propos</a></li>
-          <li><a href="programme.html" class="nav-link active">Programme</a></li>
+          <li><a href="programme.html" class="nav-link active" aria-current="page">Programme</a></li>
           <li><a href="galerie.html" class="nav-link">Galerie</a></li>
           <li><a href="partenaires.html" class="nav-link">Partenaires</a></li>
           <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
-        <button type="button" class="mobile-toggle" aria-label="Menu" aria-expanded="false">
-          <i class="fas fa-bars" aria-hidden="true"></i>
-        </button>
       </nav>
+
     </div>
   </header>
 
-  <main>
-    <!-- Header Programme -->
-    <section class="programme-header">
-      <div class="container">
-        <h1>Notre <span class="highlight">programme</span></h1>
-        <p>Découvrez nos actions passées et à venir pour la protection du fleuve Sénégal.</p>
+  <main class="programme-page">
+
+    <!-- BANNIÈRE PRINCIPALE -->
+    <section class="hero programme-hero">
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+
+        <span class="hero-badge">
+          <i class="fas fa-location-dot" aria-hidden="true"></i>
+          Saint-Louis, Sénégal
+        </span>
+
+        <p class="hero-eyebrow">THE FLOW SÉNÉGAL · NOS PROGRAMMES</p>
+
+        <h1 class="hero-title">
+          Nos actions pour
+          <span class="highlight">le fleuve Sénégal</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Des initiatives citoyennes, environnementales et solidaires
+          pour protéger notre patrimoine naturel, préserver les berges
+          et construire un avenir plus durable avec les habitants
+          de Saint-Louis.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#edition-2026" class="btn btn-primary">
+            Découvrir notre dernière action
+            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          </a>
+
+          <a href="contact.html" class="btn btn-outline">
+            Rejoindre le mouvement
+          </a>
+        </div>
+
+        <div class="hero-signature">
+          <span class="signature-line"></span>
+          <span>Agir aujourd'hui pour préserver demain.</span>
+        </div>
+
       </div>
     </section>
 
-    <!-- Introduction - Le fleuve comme point de départ -->
-    <section class="intro-section">
-      <div class="container">
-        <div class="intro-text">
-          <div class="section-header">
-            <span class="section-tag">The Flow Sénégal — Saint-Louis, mai 2025</span>
-            <h2>Le fleuve Sénégal comme <span class="accent-text">point de départ</span> d'un mouvement</h2>
-            <div class="divider"></div>
+    <!-- PRÉSENTATION DU PROGRAMME -->
+    <section class="programme-intro">
+      <div class="container programme-intro-grid">
+
+        <div class="programme-intro-copy">
+          <span class="section-tag">Notre engagement</span>
+
+          <h2>
+            Le fleuve Sénégal,
+            <span class="accent-text">point de départ</span>
+            d'un mouvement
+          </h2>
+
+          <p>
+            En mai 2025, The Flow Sénégal, porté par l'association et
+            Pape Mbaye, a organisé une première édition locale à
+            Saint-Louis du Sénégal.
+          </p>
+
+          <p>
+            Habitants, associations, sportifs, enfants et bénévoles
+            se sont retrouvés autour d'un objectif commun : prendre
+            soin du fleuve, améliorer le cadre de vie et célébrer les
+            liens qui unissent les communautés.
+          </p>
+
+          <p>
+            Cette première mobilisation a associé activités nautiques,
+            nettoyage citoyen, sensibilisation et animations collectives
+            dans le quartier de Diamaguène.
+          </p>
+
+          <a href="apropos.html" class="text-link">
+            Découvrir notre mission
+            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <div class="programme-intro-visual">
+          <img
+            src="images/WhatsApp%20Image%202026-09-25%20at%2017.15.31%20%283%29.jpeg"
+            alt="Bénévoles de The Flow Sénégal mobilisés pour la propreté des berges"
+            width="1280"
+            height="960"
+            loading="lazy"
+          >
+
+          <div class="programme-image-label">
+            <i class="fas fa-water" aria-hidden="true"></i>
+            Agir ensemble pour notre environnement
           </div>
-          <p>En mai 2025, The Flow s'est invité à Saint-Louis du Sénégal, porté par l'association The Flow Sénégal et Pape Mbaye, pour une première édition locale qui a réuni habitants, associations, sportifs et enfants autour d'un même élan : prendre soin du fleuve, tout en célébrant la vie qu'il relie.</p>
-          <p>Ce fut le début d'un mouvement : une alliance entre nature, culture et jeunesse, ancrée au cœur du delta du Sénégal.</p>
-          <div class="intro-quote">🌊 Deux jours d'action et de partage</div>
         </div>
+
       </div>
     </section>
 
-    <!-- Timeline - Samedi 17 mai et Dimanche 18 mai 2025 -->
-    <section class="timeline-section">
+    <!-- ÉDITION 2025 -->
+    <section class="programme-section programme-section-white" id="edition-2025">
       <div class="container">
-        <div class="timeline-grid">
-          <!-- Samedi 17 mai 2025 -->
-          <div class="timeline-day">
-            <div class="day-title">
-              <i class="fas fa-calendar-day"></i>
-              <span>Samedi 17 mai 2025</span>
-            </div>
-            <div class="day-subtitle">— Au cœur du quartier de Diamaguène</div>
-            <ul class="activity-list">
-              <li><i class="fas fa-water"></i> <strong>Initiation paddle</strong> pour les enfants, une première découverte du fleuve sous un angle ludique et bienveillant.</li>
-              <li><i class="fas fa-broom"></i> <strong>Grand clean-up</strong> avec les habitants, jeunes et associations locales.</li>
-              <li><i class="fas fa-chalkboard-user"></i> <strong>Sensibilisation</strong> dans le marché et auprès des commerçants, pour promouvoir des pratiques plus respectueuses du fleuve.</li>
-              <li><i class="fas fa-paintbrush"></i> <strong>Mise en valeur des quais</strong> par des fresques, animations et décorations collectives.</li>
-              <li><i class="fas fa-futbol"></i> <strong>Grand match de foot de gala</strong> entre les jeunes du quartier et les bénévoles de The Flow Sénégal, symbole de l'énergie et de la fraternité du projet.</li>
-            </ul>
+
+        <div class="programme-heading">
+          <span class="section-tag">Retour sur notre première édition</span>
+
+          <h2>
+            Deux jours pour
+            <span>faire la différence</span>
+          </h2>
+
+          <span class="programme-divider"></span>
+
+          <p>
+            Les 17 et 18 mai 2025, plusieurs activités ont rythmé
+            la mobilisation de The Flow Sénégal à Saint-Louis.
+          </p>
+        </div>
+
+        <div class="edition-intro-bar">
+          <div>
+            <strong>Une mobilisation au cœur de Diamaguène</strong>
+            <p>
+              Sensibiliser, nettoyer, transmettre et rapprocher
+              les habitants autour de la protection du fleuve.
+            </p>
           </div>
 
-          <!-- Dimanche 18 mai 2025 -->
-          <div class="timeline-day">
-            <div class="day-title">
-              <i class="fas fa-calendar-day"></i>
-              <span>Dimanche 18 mai 2025</span>
-            </div>
-            <div class="day-subtitle">— Une grande parade sur terre et sur l'eau</div>
-            <ul class="activity-list">
-              <li><i class="fas fa-person-walking"></i> <strong>Marche collective et clean-up</strong> avec les associations de randonneurs et marcheurs de Saint-Louis.</li>
-              <li><i class="fas fa-ship"></i> <strong>Parade nautique sur le fleuve</strong>, rassemblant paddlers, kayakistes et la Fédération Sénégalaise de Canoë-Kayak.</li>
-              <li><i class="fas fa-microphone-alt"></i> <strong>Rencontres avec les médias et les élus locaux</strong>, pour poser les bases d'une collaboration durable autour de la protection du fleuve.</li>
-            </ul>
-          </div>
+          <span class="edition-label">
+            <i class="fas fa-history" aria-hidden="true"></i>
+            Édition passée
+          </span>
         </div>
-      </div>
-    </section>
 
-    <!-- Mobilisation exemplaire -->
-    <section class="mobilisation-section">
-      <div class="container">
-        <div class="mobilisation-number">Près de 300 personnes</div>
-        <div class="mobilisation-text">
-          se sont mobilisées tout au long du week-end : habitants, enfants, bénévoles, sportifs, associations et institutions.<br>
-          <strong>Ce fut un moment fort de coopération, de transmission et d'espoir.</strong>
-        </div>
-      </div>
-    </section>
+        <div class="programme-days">
 
-    <!-- Projets en cours -->
-    <section class="ongoing-projects">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Et maintenant ?</span>
-          <h2>L'aventure ne fait que <span class="accent-text">commencer</span></h2>
-          <div class="divider"></div>
-          <p>The Flow Sénégal poursuit la dynamique à travers plusieurs projets en cours :</p>
-        </div>
-        <div class="projects-grid">
-          <div class="project-card">
-            <div class="project-icon"><i class="fas fa-recycle"></i></div>
-            <h3>Programme de recyclage</h3>
-            <p>Collecte et valorisation des déchets le long du fleuve, en partenariat avec les écoles et associations locales.</p>
-          </div>
-          <div class="project-card">
-            <div class="project-icon"><i class="fas fa-eye"></i></div>
-            <h3>Surveillance citoyenne</h3>
-            <p>Mise en place d'une surveillance citoyenne et d'actions de sensibilisation toute l'année.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+          <!-- SAMEDI 17 MAI -->
+          <article class="programme-day-card">
 
-    <!-- Citation Pape Mbaye -->
-    <section class="citation-section">
-      <div class="container">
-        <div class="citation-card">
-          <i class="fas fa-quote-left"></i>
-          <p>“Notre rêve, c'est que chaque enfant de Saint-Louis grandisse en regardant le fleuve comme un ami à protéger.”</p>
-          <span>— Pape Mbaye, président de The Flow Sénégal</span>
-        </div>
-      </div>
-    </section>
+            <img
+              src="images/initiation.jpeg"
+              alt="Initiation au paddle pour les enfants de Diamaguène"
+              class="programme-day-cover"
+              width="1600"
+              height="1200"
+              loading="lazy"
+            >
 
-    <!-- Éditions passées -->
-    <section class="past-editions">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Notre histoire</span>
-          <h2>Édition <span class="accent-text">2025</span></h2>
-          <div class="divider"></div>
-        </div>
-        <div class="editions-grid">
-          <div class="edition-card">
-            <div class="edition-image">
-              <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=600&h=400&fit=crop" alt="1ère édition 2025">
-            </div>
-            <div class="edition-content">
-              <div class="edition-year">Édition 2025</div>
-              <p>Première mobilisation citoyenne autour du fleuve Sénégal à Saint-Louis.</p>
-              <div class="edition-stats">
-                <span class="edition-stat"><i class="fas fa-users"></i> 300+ participants</span>
-                <span class="edition-stat"><i class="fas fa-trash-alt"></i> 1.2T déchets</span>
-                <span class="edition-stat"><i class="fas fa-calendar-alt"></i> 17-18 mai 2025</span>
+            <div class="programme-day-body">
+
+              <div class="programme-day-header">
+                <div class="programme-day-icon">
+                  <i class="fas fa-calendar-day" aria-hidden="true"></i>
+                </div>
+
+                <div>
+                  <h3>Samedi 17 mai 2025</h3>
+                  <p>Au cœur du quartier de Diamaguène</p>
+                </div>
               </div>
-              <a href="galerie.html" class="btn-link">Voir les images <i class="fas fa-chevron-right"></i></a>
+
+              <ul class="programme-activities">
+
+                <li>
+                  <span class="programme-activity-icon">
+                    <i class="fas fa-water" aria-hidden="true"></i>
+                  </span>
+
+                  <div>
+                    <strong>Initiation au paddle</strong>
+                    <p>
+                      Une première découverte du fleuve pour les enfants,
+                      dans un cadre ludique et encadré.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <span class="programme-activity-icon">
+                    <i class="fas fa-broom" aria-hidden="true"></i>
+                  </span>
+
+                  <div>
+                    <strong>Grand nettoyage citoyen</strong>
+                    <p>
+                      Une action collective avec les habitants,
+                      les jeunes et les associations locales.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <span class="programme-activity-icon">
+                    <i class="fas fa-bullhorn" aria-hidden="true"></i>
+                  </span>
+
+                  <div>
+                    <strong>Sensibilisation environnementale</strong>
+                    <p>
+                      Des échanges dans le marché et auprès des commerçants
+                      pour encourager les gestes écoresponsables.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <span class="programme-activity-icon">
+                    <i class="fas fa-palette" aria-hidden="true"></i>
+                  </span>
+
+                  <div>
+                    <strong>Mise en valeur des quais</strong>
+                    <p>
+                      Des fresques, décorations et animations collectives
+                      pour valoriser les espaces partagés.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <span class="programme-activity-icon">
+                    <i class="fas fa-futbol" aria-hidden="true"></i>
+                  </span>
+
+                  <div>
+                    <strong>Match de football de gala</strong>
+                    <p>
+                      Une rencontre fraternelle entre les jeunes du quartier
+                      et les bénévoles de The Flow Sénégal.
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
             </div>
-          </div>
+          </article>
+
+          <!-- DIMANCHE 18 MAI -->
+          <article class="programme-day-card">
+
+            <img
+              src="images/WhatsApp%20Image%202026-10-07%20at%2021.05.36%20%284%29.jpeg"
+              alt="Pagayeurs et bannière The Flow devant le pont Faidherbe"
+              class="programme-day-cover"
+              width="2048"
+              height="1520"
+              loading="lazy"
+            >
+
+            <div class="programme-day-body">
+
+              <div class="programme-day-header">
+                <div class="programme-day-icon">
+                  <i class="fas fa-calendar-day" aria-hidden="true"></i>
+                </div>
+
+                <div>
+                  <h3>Dimanche 18 mai 2025</h3>
+                  <p>Une mobilisation sur terre et sur l'eau</p>
+                </div>
+              </div>
+
+              <ul class="programme-activities">
+
+                <li>
+                  <span class="programme-activity-icon">
+                    <i class="fas fa-person-walking" aria-hidden="true"></i>
+                  </span>
+
+                  <div>
+                    <strong>Marche collective et nettoyage</strong>
+                    <p>
+                      Une marche citoyenne accompagnée d'une action
+                      de nettoyage avec les marcheurs et associations locales.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <span class="programme-activity-icon">
+                    <i class="fas fa-ship" aria-hidden="true"></i>
+                  </span>
+
+                  <div>
+                    <strong>Parade nautique sur le fleuve</strong>
+                    <p>
+                      Un rassemblement sur l'eau réunissant paddlers,
+                      kayakistes et acteurs du sport nautique.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <span class="programme-activity-icon">
+                    <i class="fas fa-microphone" aria-hidden="true"></i>
+                  </span>
+
+                  <div>
+                    <strong>Rencontres et échanges</strong>
+                    <p>
+                      Des échanges avec les médias et les élus locaux
+                      afin d'encourager une coopération durable autour du fleuve.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <span class="programme-activity-icon">
+                    <i class="fas fa-users" aria-hidden="true"></i>
+                  </span>
+
+                  <div>
+                    <strong>Mobilisation collective</strong>
+                    <p>
+                      Un temps de rencontre entre citoyens, bénévoles,
+                      sportifs et partenaires engagés pour l'environnement.
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
 
-    <!-- CTA -->
-    <section class="cta-section">
-      <div class="container cta-container">
-        <div class="cta-content">
-          <h2>Rejoignez le mouvement</h2>
-          <p>The Flow Sénégal, ce n'est pas seulement un événement, c'est un mouvement pour un avenir plus respectueux de l'environnement. Ensemble, redonnons au fleuve Sénégal sa beauté.</p>
-          <a href="contact.html" class="btn btn-primary">Nous rejoindre <i class="fas fa-arrow-right"></i></a>
+    <!-- RÉTROSPECTIVE 2026 -->
+    <section class="programme-section programme-2026" id="edition-2026">
+      <div class="container">
+
+        <div class="programme-heading">
+          <span class="section-tag">Une nouvelle étape du mouvement</span>
+
+          <h2>
+            Édition 2026 :
+            <span>agir pour nos berges</span>
+          </h2>
+
+          <span class="programme-divider"></span>
+
+          <p>
+            Retour sur une nouvelle mobilisation citoyenne portée
+            par The Flow Sénégal pour préserver notre environnement
+            et renouer avec le fleuve.
+          </p>
+        </div>
+
+        <div class="programme-2026-banner">
+          <span class="section-tag">Retour sur notre action</span>
+
+          <span class="programme-2026-status">
+            <i class="fas fa-check-circle" aria-hidden="true"></i>
+            Action réalisée
+          </span>
+        </div>
+
+        <div class="programme-2026-grid">
+
+          <div class="programme-2026-image">
+            <img
+              src="images/WhatsApp%20Image%202026-09-25%20at%2017.15.31%20%2828%29.jpeg"
+              alt="Bénévoles mobilisés pour le nettoyage des berges du fleuve"
+              width="1280"
+              height="960"
+              loading="lazy"
+            >
+
+            <div class="programme-2026-image-label">
+              <span>16 mai 2026 · Saint-Louis</span>
+              <strong>Un fleuve, une responsabilité collective</strong>
+            </div>
+          </div>
+
+          <article class="programme-2026-content">
+
+            <div class="programme-2026-date">
+              <i class="fas fa-calendar-check" aria-hidden="true"></i>
+              16 mai 2026
+            </div>
+
+            <h3>Une mobilisation pour les berges du Sor</h3>
+
+            <p>
+              Le 16 mai 2026, The Flow Sénégal a organisé une action
+              de nettoyage des berges du Sor, avec la mobilisation
+              de partenaires engagés pour l'amélioration du cadre
+              de vie et la protection de notre environnement.
+            </p>
+
+            <p>
+              Cette initiative s'inscrit dans une dynamique citoyenne
+              visant à sensibiliser les populations, à lutter contre
+              l'insalubrité et à redonner aux espaces riverains leur
+              place dans la vie collective.
+            </p>
+
+            <ul class="programme-objectives">
+
+              <li>
+                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                <span>
+                  Lutter contre les déchets et l'insalubrité des berges.
+                </span>
+              </li>
+
+              <li>
+                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                <span>
+                  Reconnecter les citoyens au fleuve et à ses espaces naturels.
+                </span>
+              </li>
+
+              <li>
+                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                <span>
+                  Promouvoir les activités nautiques et la découverte du fleuve.
+                </span>
+              </li>
+
+              <li>
+                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                <span>
+                  Contribuer à la protection des mangroves et à la lutte
+                  contre les enjeux climatiques.
+                </span>
+              </li>
+
+            </ul>
+
+            <div class="programme-partners">
+              <strong>
+                <i class="fas fa-handshake" aria-hidden="true"></i>
+                Partenaires de l'action
+              </strong>
+
+              <p>
+                SONAGED · Service de Nettoiement de la mairie de
+                Saint-Louis · Délégation régionale du Cadre de Vie
+              </p>
+            </div>
+
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PHOTOS DE NOS ACTIONS -->
+    <section class="programme-section programme-section-white">
+      <div class="container">
+
+        <div class="programme-heading">
+          <span class="section-tag">Sur le terrain</span>
+
+          <h2>
+            Nos actions <span>en images</span>
+          </h2>
+
+          <span class="programme-divider"></span>
+
+          <p>
+            Nettoyage des berges, sorties nautiques, mobilisation
+            des jeunes et engagement citoyen : revivez quelques
+            moments de nos actions à Saint-Louis.
+          </p>
+        </div>
+
+        <div class="programme-gallery-grid">
+
+          <a href="galerie.html" class="programme-gallery-item">
+            <img
+              src="images/WhatsApp%20Image%202026-09-25%20at%2017.15.31%20%2832%29.jpeg"
+              alt="Bénévoles nettoyant les berges du fleuve"
+              width="900"
+              height="675"
+              loading="lazy"
+            >
+          </a>
+
+          <a href="galerie.html" class="programme-gallery-item">
+            <img
+              src="images/WhatsApp%20Image%202026-10-07%20at%2021.05.32%20%287%29.jpeg"
+              alt="Deux pagayeurs dans la mangrove"
+              width="900"
+              height="918"
+              loading="lazy"
+            >
+          </a>
+
+          <a href="galerie.html" class="programme-gallery-item">
+            <img
+              src="images/WhatsApp%20Image%202026-10-07%20at%2021.05.33%20%287%29.jpeg"
+              alt="Paysage de pêcheurs et palmiers à Saint-Louis"
+              width="900"
+              height="1061"
+              loading="lazy"
+            >
+          </a>
+
+          <a href="galerie.html" class="programme-gallery-item">
+            <img
+              src="images/WhatsApp%20Image%202026-10-07%20at%2021.05.34%20%287%29.jpeg"
+              alt="Équipe de nettoyage au bord du fleuve, pont Faidherbe en fond"
+              width="900"
+              height="1038"
+              loading="lazy"
+            >
+          </a>
+
+          <a href="galerie.html" class="programme-gallery-item">
+            <img
+              src="images/WhatsApp%20Image%202026-10-07%20at%2021.05.35%20%282%29.jpeg"
+              alt="Pirogue et monument à Saint-Louis"
+              width="900"
+              height="1133"
+              loading="lazy"
+            >
+          </a>
+
+          <a href="galerie.html" class="programme-gallery-item">
+            <img
+              src="images/WhatsApp%20Image%202026-10-07%20at%2021.05.36%20%284%29.jpeg"
+              alt="Pagayeurs et bannière The Flow devant le pont Faidherbe"
+              width="900"
+              height="668"
+              loading="lazy"
+            >
+          </a>
+
+        </div>
+
+        <div class="section-action" style="text-align:center; margin-top:35px;">
+          <a href="galerie.html" class="btn btn-primary">
+            Voir toute la galerie
+            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MOBILISATION CITOYENNE -->
+    <section class="programme-impact">
+      <div class="container">
+
+        <div class="programme-impact-icon">
+          <i class="fas fa-people-group" aria-hidden="true"></i>
+        </div>
+
+        <span class="section-tag" style="color:#f4bd66;">
+          Une énergie collective
+        </span>
+
+        <h2>
+          Près de <span>300 personnes</span>
+        </h2>
+
+        <p>
+          Habitants, enfants, bénévoles, sportifs, associations et
+          institutions se sont mobilisés au cours du week-end de
+          la première édition.
+
+          <br><br>
+
+          <strong>
+            Un moment de coopération, de transmission et d'espoir
+            pour l'avenir du fleuve Sénégal.
+          </strong>
+        </p>
+
+      </div>
+    </section>
+
+    <!-- PROJETS ET PERSPECTIVES -->
+    <section class="programme-section programme-section-light" id="projets">
+      <div class="container">
+
+        <div class="programme-heading">
+          <span class="section-tag">Construire la suite</span>
+
+          <h2>
+            L'aventure ne fait que
+            <span>commencer</span>
+          </h2>
+
+          <span class="programme-divider"></span>
+
+          <p>
+            Dans la continuité de ces mobilisations, plusieurs axes
+            d'action peuvent contribuer à renforcer l'engagement
+            environnemental à Saint-Louis.
+          </p>
+        </div>
+
+        <div class="programme-projects">
+
+          <article class="programme-project-card">
+            <div class="programme-project-icon">
+              <i class="fas fa-recycle" aria-hidden="true"></i>
+            </div>
+
+            <h3>Gestion et valorisation des déchets</h3>
+
+            <p>
+              Encourager la collecte des déchets, les pratiques de tri
+              et les initiatives de valorisation, en collaboration
+              avec les habitants, les écoles et les associations.
+            </p>
+          </article>
+
+          <article class="programme-project-card">
+            <div class="programme-project-icon">
+              <i class="fas fa-eye" aria-hidden="true"></i>
+            </div>
+
+            <h3>Sensibilisation et veille citoyenne</h3>
+
+            <p>
+              Favoriser les comportements responsables, sensibiliser
+              les communautés et encourager une attention collective
+              à la préservation du fleuve tout au long de l'année.
+            </p>
+          </article>
+
+          <article class="programme-project-card">
+            <div class="programme-project-icon">
+              <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+            </div>
+
+            <h3>Éducation environnementale</h3>
+
+            <p>
+              Sensibiliser les enfants et les jeunes aux enjeux
+              environnementaux à travers des ateliers, des rencontres
+              et des activités pédagogiques adaptées.
+            </p>
+          </article>
+
+          <article class="programme-project-card">
+            <div class="programme-project-icon">
+              <i class="fas fa-handshake" aria-hidden="true"></i>
+            </div>
+
+            <h3>Partenariats et mobilisation locale</h3>
+
+            <p>
+              Renforcer les liens entre les collectivités, les
+              associations, les établissements scolaires, les
+              entreprises et les citoyens engagés.
+            </p>
+          </article>
+
         </div>
       </div>
     </section>
+
+    <!-- PAROLE DU PRÉSIDENT -->
+    <section class="programme-section programme-section-white">
+      <div class="container">
+
+        <div class="programme-quote">
+
+          <div class="programme-quote-icon">
+            <i class="fas fa-quote-left" aria-hidden="true"></i>
+          </div>
+
+          <blockquote>
+            « Notre engagement est de protéger le fleuve Sénégal,
+            de préserver ses berges et son environnement immédiat,
+            et de transmettre aux générations futures le respect
+            de ce patrimoine naturel commun. »
+          </blockquote>
+
+          <cite>
+            Pape Mbaye · Président de The Flow Sénégal
+          </cite>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- APPEL À PARTICIPATION -->
+    <section class="programme-cta">
+      <div class="container">
+
+        <div class="programme-cta-content">
+
+          <i class="fas fa-hands-holding-circle" aria-hidden="true"></i>
+
+          <h2>Le fleuve a besoin de nous</h2>
+
+          <p>
+            The Flow Sénégal est un mouvement collectif qui invite
+            chacun à contribuer à un environnement plus propre et
+            à un avenir plus durable.
+
+            Habitants, bénévoles, associations, institutions et
+            entreprises : chaque engagement peut faire la différence.
+          </p>
+
+          <a href="contact.html" class="btn btn-light">
+            Rejoindre le mouvement
+            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
   </main>
 
-  <!-- Footer -->
+  <!-- PIED DE PAGE -->
   <footer class="site-footer">
     <div class="container footer-container">
-      <div class="footer-col">
-        <div class="logo-footer">THE FLOW <span>Sénégal</span></div>
-        <p>Association citoyenne pour la protection du fleuve Sénégal et l'amélioration du cadre de vie.</p>
+
+      <div class="footer-col footer-about">
+        <a href="index.html" class="footer-brand">
+          <img
+            src="images/logoTFS.jpeg"
+            alt="Logo The Flow Sénégal"
+            class="footer-logo"
+            width="47"
+            height="47"
+            loading="lazy"
+          >
+
+          <span>THE FLOW <strong>Sénégal</strong></span>
+        </a>
+
+        <p>
+          Association citoyenne engagée pour la protection du fleuve Sénégal,
+          de ses berges et de son environnement immédiat.
+        </p>
+
         <div class="social-links">
-          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <!-- Remplacer les # par les liens officiels des réseaux sociaux -->
+          <a href="#" aria-label="Facebook">
+            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+          </a>
+
+          <a href="#" aria-label="Instagram">
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+          </a>
+
+          <a href="#" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
+
       <div class="footer-col">
-        <h4>Navigation</h4>
+        <h3>Navigation</h3>
+
         <ul>
           <li><a href="index.html">Accueil</a></li>
           <li><a href="apropos.html">À propos</a></li>
-          <li><a href="programme.html">Programme</a></li>
+          <li><a href="programme.html" aria-current="page">Programme</a></li>
           <li><a href="galerie.html">Galerie</a></li>
           <li><a href="partenaires.html">Partenaires</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
+
       <div class="footer-col">
-        <h4>Nous trouver</h4>
-        <ul>
-          <li><i class="fas fa-map-marker-alt"></i> Diamaguène, près du dispensaire Sor</li>
-          <li><i class="fas fa-city"></i> Saint-Louis, Sénégal</li>
-          <li><i class="fas fa-envelope"></i> <a href="mailto:contact@theflowsenegal.org">contact@theflowsenegal.org</a></li>
+        <h3>Nous trouver</h3>
+
+        <ul class="contact-list">
+          <li>
+            <i class="fas fa-location-dot" aria-hidden="true"></i>
+            <span>
+              Diamaguène, près du dispensaire Sor,
+              Saint-Louis, Sénégal
+            </span>
+          </li>
+
+          <li>
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            <a href="mailto:contact@theflowsenegal.org">
+              contact@theflowsenegal.org
+            </a>
+          </li>
+
+          <li>
+            <i class="fas fa-globe" aria-hidden="true"></i>
+            <a
+              href="https://theflowsenegal.onrender.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Notre site internet
+            </a>
+          </li>
         </ul>
       </div>
-      <div class="footer-col">
-        <h4>Rejoignez-nous</h4>
-        <p>Soutenez l'initiative, devenez bénévole.</p>
-        <a href="contact.html" class="btn-small">Nous contacter</a>
+
+      <div class="footer-col footer-join">
+        <h3>Agissons ensemble</h3>
+
+        <p>
+          La préservation du fleuve et de son environnement commence
+          par l'engagement de chacun.
+        </p>
+
+        <a href="contact.html" class="btn btn-primary">
+          Rejoindre l'association
+        </a>
       </div>
+
     </div>
+
     <div class="footer-bottom">
-      <p>&copy; 2026 The Flow Sénégal — Ensemble, redonnons vie au fleuve.</p>
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2026 The Flow Sénégal. Tous droits réservés.</p>
+        <p>Ensemble, redonnons vie au fleuve.</p>
+      </div>
     </div>
   </footer>
 
